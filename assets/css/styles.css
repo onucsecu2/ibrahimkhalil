@@ -1,0 +1,10 @@
+p.detail { color:#4C4C4C;font-family:Calibri;}
+span.name { color:#0044b3;font-family:Tahoma; }
+.reveal
+{
+    opacity:0;
+}
+.badge
+{
+    margin: 5px;
+}

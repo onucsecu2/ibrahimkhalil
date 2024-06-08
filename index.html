@@ -9,94 +9,61 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto:500&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
   <link href="http://allfont.net/allfont.css?fonts=league-spartan" rel="stylesheet" type="text/css" />
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap" rel="stylesheet"/>
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   <script src="https://kit.fontawesome.com/84f006a9fc.js" crossorigin="anonymous"></script>
+  <!-- Custom css  -->
+  <link href="assets/css/styles.css" rel="stylesheet"/>
+  <!--  Custom JS-->
+  <script src="assets/js/reveal.js"></script>
+  <script src="assets/js/parse.js"></script>
 
-  <style>
-    p.detail { color:#4C4C4C;font-family:Calibri;}
-    span.name { color:#0044b3;font-family:Tahoma; }
-    .reveal
-    {
-      opacity:0;
-    }
-    .badge
-    {
-      margin: 5px;
-    }
-  </style>
-
-  <script>
-    $(document).ready(function() {
-
-      /* Every time the window is scrolled ... */
-      $(window).scroll( function(){
-
-        /* Check the location of each desired element */
-        $('.reveal').each( function(i){
-
-          var bottom_of_object = $(this).position().top + $(this).outerHeight()/2;
-          var bottom_of_window = $(window).scrollTop() + $(window).height();
-
-          /* If the object is completely visible in the window, fade it it */
-          if( bottom_of_window > bottom_of_object ){
-
-            $(this).animate({'opacity':'1'},1000);
-
-          }
-
-        }); 
-
-      });
-
-    });
-  </script>
-  <title>Muhammod Ibrahim Khalil</title>
+  <title>Khalil | Portfolio</title>
 </head>
 <body data-spy="scroll" data-target="#navbarNav" data-offset="500">
- <nav  class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div id="navbarNav" class="collapse navbar-collapse justify-content-center">
-    <ul class="navbar-nav">
-      <li class="nav-item">
-        <a class="nav-link" href="#aboutme" >ABOUT ME</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#skills">SKILLS</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#cocurriculum">CO-CURRICULUM</a>
-      </li>			  
-      <li class="nav-item">
-        <a class="nav-link" href="#education" >EDUCATION</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#projects">PROJECTS</a>
-      </li>
+<!-- <nav  class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">-->
+<!--  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">-->
+<!--    <span class="navbar-toggler-icon"></span>-->
+<!--  </button>-->
+<!--  <div id="navbarNav" class="collapse navbar-collapse justify-content-center">-->
+<!--    <ul class="navbar-nav">-->
+<!--      <li class="nav-item">-->
+<!--        <a class="nav-link" href="#aboutme" >ABOUT ME</a>-->
+<!--      </li>-->
+<!--      <li class="nav-item">-->
+<!--        <a class="nav-link" href="#skills">SKILLS</a>-->
+<!--      </li>-->
+<!--      <li class="nav-item">-->
+<!--        <a class="nav-link" href="#cocurriculum">CO-CURRICULUM</a>-->
+<!--      </li>			  -->
+<!--      <li class="nav-item">-->
+<!--        <a class="nav-link" href="#education" >EDUCATION</a>-->
+<!--      </li>-->
+<!--      <li class="nav-item">-->
+<!--        <a class="nav-link" href="#projects">PROJECTS</a>-->
+<!--      </li>-->
 
-    </ul>
-  </div>
+<!--    </ul>-->
+<!--  </div>-->
 
-</nav>
+<!--</nav>-->
 
 
 <br id="aboutme">
 
 <div class="container-fluid flex-wrap">
 
-  <center>
+  <div style="text-align: center;">
     <h1 style="font-family:courier;">ABOUT ME</h1>
     <svg height="4" width="170">
       <line x1="0" y1="0" x2="200" y2="0" style="stroke:rgb(128, 131, 135);stroke-width:5" />
     </svg>
-  </center>
+  </div>
   <div class="row">
     <div class="col-12 col-sm-4">
-      <img src="icons/dp.jpg" style="object-fit: cover;width: 100%;height: 100%;">
+      <img src="assets/icons/dp.jpg" style="object-fit: cover;width: 100%;height: 100%;">
     </div>
 
     <div class="col-12 col-sm-8" style="padding-right: 2%">
@@ -172,16 +139,15 @@
        <div class="row">
          <div class="col col-sm"><figure><i class="fab fa-laravel fa-3x"></i><figcaption><p><strong>Laravel</strong></p></figcaption></figure></div>
          <div class="col col-sm"><figure><i class="fab fa-github fa-3x"></i><figcaption><p><strong>Github</strong></p></figcaption></figure></div>
-         <div class="col col-sm"><figure><img src="icons/androidstudio.png"><figcaption><p><strong>Android Studio</strong></p></figcaption></figure></div>                   
+         <div class="col col-sm"><figure><img src="assets/icons/androidstudio.png"><figcaption><p><strong>Android Studio</strong></p></figcaption></figure></div>
          <div class="col col-sm"><figure><i class="fab fa-linux fa-3x"></i><figcaption><p><strong>Linux</strong></p></figcaption></figure></div>
-
        </div>
        <div class="row">
         <div class="col col-sm"><figure><i class="fas fa-database fa-3x"></i><figcaption><p><strong>MySQL, SQLite &amp; Firebase</strong> </p></figcaption></figure>
         </div>
         <div class="col col-sm"><figure><i class="fab fa-js-square fa-3x"></i></i><figcaption><p><strong>JavaScript</strong> </p></figcaption></figure>
         </div>
-        <div class="col col-sm"><figure><img src="icons/opencv.png"></figure></div>
+        <div class="col col-sm"><figure><img src="assets/icons/opencv.png"></figure></div>
         <div class="col col-sm"><figure><i class="fas fa-brain fa-3x"></i><figcaption><p><strong>Keras &amp; Tensorflow</strong></p></figcaption></figure>
         </div>
         <div class="row">
@@ -308,7 +274,7 @@
         </div>
       </div>
       <div class="card">
-        <img class="card-img-top" src="icons/csecpc2.png" alt="Card image cap">
+        <img class="card-img-top" src="assets/icons/csecpc2.png" alt="Card image cap">
         <div class="card-body">
           <h5 class="card-title">CSECPC</h5>
           <ul>
@@ -337,7 +303,7 @@
         </div>
       </div>
       <div class="card">
-        <img class="card-img-top"  src="icons/dumpt.png" alt="Card image cap">
+        <img class="card-img-top" src="assets/icons/dumpt.png" alt="Card image cap">
         <div class="card-body">
           <h5 class="card-title">DumpIt</h5>
           <ul>
@@ -377,7 +343,7 @@
 
     <div class="card-deck">
       <div class="card">
-        <img class="card-img-top" src="icons/momr.jpg" alt="Poster Heart Analysis">
+        <img class="card-img-top" src="assets/icons/momr.jpg" alt="Poster Heart Analysis">
         <div class="card-body">
           <h5 class="card-title">m-OMR</h5>
           <ul>
@@ -395,7 +361,7 @@
         </div>
       </div>
       <div class="card">
-        <img class="card-img-top" src="icons/tubecatcher.png" alt="Card image cap">
+        <img class="card-img-top" src="assets/icons/tubecatcher.png" alt="Card image cap">
         <div class="card-body">
           <h5 class="card-title">TUBE-CATCHER</h5>
           <ul>
@@ -418,7 +384,7 @@
         </div>
       </div>
       <div class="card">
-        <img class="card-img-top" src="icons/bblog.png" alt="Card image cap">
+        <img class="card-img-top" src="assets/icons/bblog.png" alt="Card image cap">
         <div class="card-body">
           <h5 class="card-title">BASIC BLOG</h5>
           <ul>
