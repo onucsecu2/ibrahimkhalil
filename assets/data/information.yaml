@@ -41,6 +41,6 @@ SECTIONS:
 MISCELLANEOUS:
   contacts:
     - href: https://github.com/onucsecu2
-      icon: <i class="fas fa-phone-alt fa-2x"></i>
+      icon: <i class="fab fa-github fa-2x"></i>
     - href: mailto:onucsecu@gmail.com
       icon: <i class="far fa-envelope fa-2x"></i>
