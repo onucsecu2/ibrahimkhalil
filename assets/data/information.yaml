@@ -1,22 +1,18 @@
 SECTIONS:
-  - ABOUT_ME:
-      title:
-        en: ABOUT ME
-        jp: 自分について
-      content:
-        en: <p> My name is Khalil. I am a computer science and engineering graduate. I have passion for my own field. I find interest in programming and developing software or building a software system on the basis of real life problems. I love to learn and brainstorm to apply my knowledge ethically.<p>
+  - title:
+      en: ABOUT ME
+      jp: 自分について
+    content:
+      en: <p> My name is Khalil. I am a computer science and engineering graduate. I have passion for my own field. I find interest in programming and developing software or building a software system on the basis of real life problems. I love to learn and brainstorm to apply my knowledge ethically.<p>
           <p> I love to spend my leisure time by solving puzzles and practicing competitive programming. I have keen interest in learning new languages. I can speak japanese a little too.</p>
-  - SKILLS:
-      title:
-        en: What I can do
-  - ACTIVITIES:
-      title:
-        en: Where I Was involved
-      content:
-  - EDUCATION:
-      title:
-        en: EDUCATION
-      content:
+  - title:
+      en: What I can do
+  - title:
+      en: Where I Was involved
+    content:
+  - title:
+      en: EDUCATION
+    content:
         bsc:
           institution:
             en: University of Chittagong
@@ -26,25 +22,22 @@ SECTIONS:
             en: Computer Science & Engineering
           date:
             en: February, 2020
-  - PROJECTS:
-      title:
-        en: What I am doing
-      content:
-        paragraph:
-          en: I killed tiger and bear.
-        project:
-          panama:
-            description:
-              en: It is a backwase app
-            media: asset/panama.jpg
-            alt: project image
-            link: www.asja.com
-          codejavu:
-            description:
-              en: It is a backwase app
-            media: asset/panama.jpg
-            alt: project image
-            link: www.asja.com
+  - title:
+      en: What I am doing
+    content:
+      paragraph:
+        en: I killed tiger and bear.
+      project:
+        - description:
+            en: It is a backwase app
+          media: asset/panama.jpg
+          alt: project image
+          link: www.asja.com
+        - description:
+            en: It is a backwase app
+          media: asset/panama.jpg
+          alt: project image
+          link: www.asja.com
 
 
 MISCELLANEOUS:

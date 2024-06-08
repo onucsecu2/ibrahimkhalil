@@ -1,5 +1,7 @@
-p.detail { color:#4C4C4C;font-family:Calibri;}
-span.name { color:#0044b3;font-family:Tahoma; }
+p.detail { color:#4C4C4C;
+    font-family: Calibri, sans-serif;}
+span.name { color:#0044b3;
+    font-family: Tahoma, sans-serif; }
 .reveal
 {
     opacity:0;
@@ -7,4 +9,11 @@ span.name { color:#0044b3;font-family:Tahoma; }
 .badge
 {
     margin: 5px;
+}
+h1 {
+    font-family: courier, serif;
+}
+
+.section-heading {
+    text-align: center;
 }

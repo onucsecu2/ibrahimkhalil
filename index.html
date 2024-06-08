@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   <script src="https://kit.fontawesome.com/84f006a9fc.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.1.0/js-yaml.js"></script>
   <!-- Custom css  -->
   <link href="assets/css/styles.css" rel="stylesheet"/>
   <!--  Custom JS-->
@@ -23,85 +24,43 @@
   <title>Khalil | Portfolio</title>
 </head>
 <body data-spy="scroll" data-target="#navbarNav" data-offset="500">
-<!-- <nav  class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">-->
-<!--  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">-->
-<!--    <span class="navbar-toggler-icon"></span>-->
-<!--  </button>-->
-<!--  <div id="navbarNav" class="collapse navbar-collapse justify-content-center">-->
-<!--    <ul class="navbar-nav">-->
-<!--      <li class="nav-item">-->
-<!--        <a class="nav-link" href="#aboutme" >ABOUT ME</a>-->
-<!--      </li>-->
-<!--      <li class="nav-item">-->
-<!--        <a class="nav-link" href="#skills">SKILLS</a>-->
-<!--      </li>-->
-<!--      <li class="nav-item">-->
-<!--        <a class="nav-link" href="#cocurriculum">CO-CURRICULUM</a>-->
-<!--      </li>			  -->
-<!--      <li class="nav-item">-->
-<!--        <a class="nav-link" href="#education" >EDUCATION</a>-->
-<!--      </li>-->
-<!--      <li class="nav-item">-->
-<!--        <a class="nav-link" href="#projects">PROJECTS</a>-->
-<!--      </li>-->
-
-<!--    </ul>-->
-<!--  </div>-->
-
-<!--</nav>-->
-
-
-<br id="aboutme">
-
-<div class="container-fluid flex-wrap">
-
-  <div style="text-align: center;">
-    <h1 style="font-family:courier;">ABOUT ME</h1>
-    <svg height="4" width="170">
-      <line x1="0" y1="0" x2="200" y2="0" style="stroke:rgb(128, 131, 135);stroke-width:5" />
-    </svg>
-  </div>
-  <div class="row">
-    <div class="col-12 col-sm-4">
-      <img src="assets/icons/dp.jpg" style="object-fit: cover;width: 100%;height: 100%;">
+<main class="container-fluid flex-wrap">
+  <section id="aboutme">
+    <div class="section-heading">
+      <h1></h1>
+      <svg height="4" width="170">
+        <line x1="0" y1="0" x2="200" y2="0" style="stroke:rgb(128, 131, 135);stroke-width:5" />
+      </svg>
     </div>
-
-    <div class="col-12 col-sm-8" style="padding-right: 2%">
-      <!--            <h4 style="word-wrap: break-word;">Hello there,</h4>-->
-      <br>
-      <p align="justify" style=" font-family: 'Open Sans', sans-serif; word-wrap: break-word;">My name is Muhammod Ibrahim Khalil. I am a computer science and engineering graduate. I have passion for my own field. I find interest in programming and developing software or building a software system on the basis of real life problems. I love to learn and brainstorm to apply my knowledge ethically.
+    <div class="row">
+      <div class="col-12 col-sm-4">
+        <img src="assets/icons/dp.jpg" style="object-fit: cover;width: 100%;height: 100%;">
+      </div>
+      <div class="col-12 col-sm-8" style="padding-right: 2%">
         <br>
-      I love to spend my leisure time by solving puzzles and practicing competitive programming. I have keen interest in learning new languages. I can speak japanese a little too.</p>      
-      <div class="row" style="word-wrap: break-word">
-        <div class="col-6 col-sm-4" style="padding-right: 2%">
-          <a style="text-decorations:none; color:inherit;" href="https://github.com/onucsecu2/"><i class="fab fa-github-square fa-2x"></i> <span><b>https://github.com/onucsecu2</b></span></a>
+        <p align="justify" style=" font-family: 'Open Sans', sans-serif; word-wrap: break-word;">My name is Muhammod Ibrahim Khalil. I am a computer science and engineering graduate. I have passion for my own field. I find interest in programming and developing software or building a software system on the basis of real life problems. I love to learn and brainstorm to apply my knowledge ethically.
+          <br>
+          I love to spend my leisure time by solving puzzles and practicing competitive programming. I have keen interest in learning new languages. I can speak japanese a little too.</p>
+        <div class="row" style="word-wrap: break-word">
+          <div class="col-6 col-sm-4" style="padding-right: 2%">
+            <a style="text-decorations:none; color:inherit;" href="https://github.com/onucsecu2/"><i class="fab fa-github-square fa-2x"></i> <span><b>https://github.com/onucsecu2</b></span></a>
+          </div>
+          <div class="col-6 col-sm-4" style="padding-right: 2%">
+            <a style="text-decorations:none; color:inherit;" href="tel:+8801863610265"><i class="fas fa-phone-alt fa-2x">&nbsp;&nbsp;</i><span><b>(+88)018-63610265</b></span></a>
+          </div>
         </div>
-        <div class="col-6 col-sm-4" style="padding-right: 2%">
-          <a style="text-decorations:none; color:inherit;" href="tel:+8801863610265"><i class="fas fa-phone-alt fa-2x">&nbsp;&nbsp;</i><span><b>(+88)018-63610265</b></span></a>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-6 col-sm-4" style="padding-right: 2%">
-          <a style="text-decorations:none; color:inherit; " href="mailto:onucsecu@gmail.com"><i class="far fa-envelope fa-2x"></i><span> <b> onucsecu@gmail.com </b></span></a>
+        <div class="row">
+          <div class="col-6 col-sm-4" style="padding-right: 2%">
+            <a style="text-decorations:none; color:inherit; " href="mailto:onucsecu@gmail.com"><i class="far fa-envelope fa-2x"></i><span> <b> onucsecu@gmail.com </b></span></a>
+          </div>
         </div>
       </div>
     </div>
-  </div>  
-  <br>
-  <br>
-  <br id="skills">
-  <div style="background-color: 	#eeeeee;">
-    <br>
-    <br>
+  </section>
+  <section id="skills" style="background-color: #eeeeee;">
     <div class="row reveal">
       <div class="col-sm-12" style="padding-right: 2%;padding-left: 2%">
-        <center>
-          <h1 style="font-family:courier;text-align:center" >SKILLS</h1>
-          <svg height="4" width="120">
-            <line x1="0" y1="0" x2="200" y2="0" style="stroke:rgb(179, 4, 36);stroke-width:5" />
-          </svg>
-        </center>
-        <br>
+        <div class="section-heading"></div>
         <p  style="font-family: 'Open Sans', sans-serif;text-align: center">I have some basic idea about syntax of few programming languages and I am familiar with software, tools and frameworks. However, language is not matter for me. I am a quick learner and I can shift to other languages as per recquirement.</p>
         <p align="justify" style="word-wrap: break-word;"></p>
       </div>
@@ -113,7 +72,7 @@
 
         <ul style="font-family: 'Open Sans', sans-serif;">
           <li >Web Development using PHP Laravel framework </li>
-          <li>Laravel framework package development</li> 
+          <li>Laravel framework package development</li>
           <li>Android Application development using JAVA and Android Studio</li>
           <li>Windows Desktop Application development using WPF framework with C#</li>
           <li>Competitive Programming experience in C/C++</li>
@@ -129,352 +88,313 @@
         <h4 style="font-family: League Spartan Bold; word-wrap: break-word;">PROGRAMMING LANGUAGES AND TOOLS</h4>
         <br>
         <div class="row">
-         <div class="col col-sm">
-           <figure><i class="fab fa-java fa-3x"></i><figcaption><p><strong>Java</strong></p></figcaption></figure>
-         </div>
-         <div class="col col-sm"><figure><i class="fab fa-python fa-3x"></i><figcaption><p><strong>Python3</strong></p></figcaption></figure></div>
-         <div class="col col-sm"><figure><i class="fab fa-php fa-3x"></i><figcaption><p><strong>php</strong></p></figcaption></figure></div>
+          <div class="col col-sm">
+            <figure><i class="fab fa-java fa-3x"></i><figcaption><p><strong>Java</strong></p></figcaption></figure>
+          </div>
+          <div class="col col-sm"><figure><i class="fab fa-python fa-3x"></i><figcaption><p><strong>Python3</strong></p></figcaption></figure></div>
+          <div class="col col-sm"><figure><i class="fab fa-php fa-3x"></i><figcaption><p><strong>php</strong></p></figcaption></figure></div>
 
-       </div>
-       <div class="row">
-         <div class="col col-sm"><figure><i class="fab fa-laravel fa-3x"></i><figcaption><p><strong>Laravel</strong></p></figcaption></figure></div>
-         <div class="col col-sm"><figure><i class="fab fa-github fa-3x"></i><figcaption><p><strong>Github</strong></p></figcaption></figure></div>
-         <div class="col col-sm"><figure><img src="assets/icons/androidstudio.png"><figcaption><p><strong>Android Studio</strong></p></figcaption></figure></div>
-         <div class="col col-sm"><figure><i class="fab fa-linux fa-3x"></i><figcaption><p><strong>Linux</strong></p></figcaption></figure></div>
-       </div>
-       <div class="row">
-        <div class="col col-sm"><figure><i class="fas fa-database fa-3x"></i><figcaption><p><strong>MySQL, SQLite &amp; Firebase</strong> </p></figcaption></figure>
-        </div>
-        <div class="col col-sm"><figure><i class="fab fa-js-square fa-3x"></i></i><figcaption><p><strong>JavaScript</strong> </p></figcaption></figure>
-        </div>
-        <div class="col col-sm"><figure><img src="assets/icons/opencv.png"></figure></div>
-        <div class="col col-sm"><figure><i class="fas fa-brain fa-3x"></i><figcaption><p><strong>Keras &amp; Tensorflow</strong></p></figcaption></figure>
         </div>
         <div class="row">
-        <div class="col col-sm"><figure><i class="fas fa-box fa-3x"></i></i><figcaption><p><strong>Package</strong></p></figcaption></figure></div>
+          <div class="col col-sm"><figure><i class="fab fa-laravel fa-3x"></i><figcaption><p><strong>Laravel</strong></p></figcaption></figure></div>
+          <div class="col col-sm"><figure><i class="fab fa-github fa-3x"></i><figcaption><p><strong>Github</strong></p></figcaption></figure></div>
+          <div class="col col-sm"><figure><img src="assets/icons/androidstudio.png"><figcaption><p><strong>Android Studio</strong></p></figcaption></figure></div>
+          <div class="col col-sm"><figure><i class="fab fa-linux fa-3x"></i><figcaption><p><strong>Linux</strong></p></figcaption></figure></div>
+        </div>
+        <div class="row">
+          <div class="col col-sm"><figure><i class="fas fa-database fa-3x"></i><figcaption><p><strong>MySQL, SQLite &amp; Firebase</strong> </p></figcaption></figure>
+          </div>
+          <div class="col col-sm"><figure><i class="fab fa-js-square fa-3x"></i></i><figcaption><p><strong>JavaScript</strong> </p></figcaption></figure>
+          </div>
+          <div class="col col-sm"><figure><img src="assets/icons/opencv.png"></figure></div>
+          <div class="col col-sm"><figure><i class="fas fa-brain fa-3x"></i><figcaption><p><strong>Keras &amp; Tensorflow</strong></p></figcaption></figure>
+          </div>
+          <div class="row">
+            <div class="col col-sm"><figure><i class="fas fa-box fa-3x"></i></i><figcaption><p><strong>Package</strong></p></figcaption></figure></div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <br>
-  <br>
-  <br id="cocurriculum">
-  <br>
-</div>
-<div class="row reveal">      
-  <div class="col-md-12" style="padding-right: 2%;padding-left: 2%">
-    <br>
-    <br>
-    <br>
-    <br>
-    <center>
-      <h1 style="font-family:courier;text-align:center" >CO-CURRICULUM ACTIVITIES</h1>
-      <svg height="4" width="40%">
-        <line x1="0" y1="0" x2="100%" y2="0" style="stroke:rgb(255, 99, 3);stroke-width:5" />
-      </svg>
-    </center>
-
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <ul>
-      <li><a style="text-decorations:none; color:inherit;" href="https://drive.google.com/open?id=1mjW8S-zDwkhSjIgYJ1YLlRQsHZLKM6ga">Honorabale mention in the 2016 ACM-ICPC Asia Dhaka Regional Contest</a></li>
-      <li><a style="text-decorations:none; color:inherit;" href="https://drive.google.com/open?id=1zKPKjsVRfZucW02I3BIuKZBxYZi8epWr">Honorable mention in the 2016 ACM-ICPC Bangladesh National Collegiate Programming Contest</a></li>
-      <li><a style="text-decorations:none; color:inherit;" href="https://university-of-chittagong.github.io/engg-day-2019-web/?fbclid=IwAR1e-MpQbIq4UB8ifPpyWfC_DKELA1e6L4GpX5cGqrhqe9rgPQ3ZRR6VoYA#speakers">Honorable judge of Engineering Day-2019 Programming Contest of University of Chittagong</a></li>
-
-    </ul>
-  </div>
-</div>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br id="education">
-<div class="reveal" style="background-color: 	#eeeeee;">
-  <div class="row" >
-    <div class="col-12" style="padding-right: 2%;padding-left: 2%">
-      <br>
-      <br>
-      <br>
-      <center>
-        <h1 style="font-family:courier;text-align:center" >EDUCATION</h1>
-        <svg height="4" width="200">
-          <line x1="0" y1="0" x2="200" y2="0" style="stroke:rgb(234, 255, 3);stroke-width:5" />
-        </svg>
-      </center>
-      <br>
-      <br>
-      <h2  style="font-family:'Roboto', sans-serif;text-align: center">University of Chittagong</h2>
-    </div>
-    <br>
-  </div>
-  <div class="row justify-content-center"  style="height: 100%;">
-
-    <div class="col-5 col-sm">
-      <div class="float-right"><b>BSc in ENGINEERING</b></div> 
-    </div> 
-    <div class="col-1 col-sm-1 "><p align="center" style="color: red;">&#8226;</p></div>
-    <div class="col-5 col-sm">
-      <div class="float-left"><b>COMPUTER SCIENCE &amp; ENGINEERING</b></div>
-    </div>
-    <br>
-  </div>
-  <div class="row justify-content-center"  style="height: 100%; padding-left:5%; padding-right: 5% ;">
-    <br>
-    <p align="justify" style="word-wrap: break-word;">I studied computer science and engineering at the University of Chittagong. Here I have gained knowledge on wide variety of subjects including programming, algorithm, data structure, software engineering, networking,  OOP, deep learning &amp; machine learning, articifial inteligence, peripherals, graphics &amp; image processing etc.</p>
-    <br>
-  </div>    
-  <div class="row justify-content-center"  style="height: 100%;">
-    <p align="justify" style="word-wrap: break-word;"><b>Graduating in : </b> <span class="name">February, 2020</span></p>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br id="projects">
-  </div>
-
-</div>
-<div class="row">
-
-  <div class="col-12" style="padding-right: 2%;padding-left: 2%">
-    <br>
-    <br>
-    <br>
-    <br>
-    <center>
-      <h1 style="font-family:courier;text-align:center" >PROJECTS</h1>
-      <svg height="4" width="170">
-        <line x1="0" y1="0" x2="170" y2="0" style="stroke:rgb(3, 255, 104);stroke-width:5" />
-      </svg>  
-    </center>
-    <br>
-    <br>
-    <br>
-    <div class="card-deck">
-      <div class="card">
-        <img class="card-img-top" src="https://scx1.b-cdn.net/csz/news/800/2016/584ed5a993732.png" alt="Poster Heart Analysis">
-        <div class="card-body">
-          <h5 class="card-title">A COMPLETE STUDY OF HEART SOUND CLASSIFICATION USING MACHINE LEARNING TECHNIQUE</h5>
-          <ul>
-            <li>It is the system which can detect heart problem specifically by recording sound of the heart.</li>
-            <li>Heart disease can be detected in earlier stage with cost effectively</li>
-          </ul>
-          <br>
-          <span class="badge badge-info float-left"> Python3</span>
-          <span class="badge badge-info float-left"> keras </span>
-          <span class="badge badge-info float-left"> tensorflow </span>
+  </section>
+  <section id="cocurriculum">
+    <div class="row reveal" >
+      <div class="col-md-12" style="padding-right: 2%;padding-left: 2%">
+        <div style="text-align: center;">
+          <h1 style="font-family:courier;text-align:center" >CO-CURRICULUM ACTIVITIES</h1>
+          <svg height="4" width="40%">
+            <line x1="0" y1="0" x2="100%" y2="0" style="stroke:rgb(255, 99, 3);stroke-width:5" />
+          </svg>
         </div>
-        <div class="card-footer">
-          <a href="https://github.com/onucsecu2/heart_sound_classification"><i class="fab fa-github-alt fa-2x float-right"></i></a>
+        <ul>
+          <li><a style="text-decorations:none; color:inherit;" href="https://drive.google.com/open?id=1mjW8S-zDwkhSjIgYJ1YLlRQsHZLKM6ga">Honorabale mention in the 2016 ACM-ICPC Asia Dhaka Regional Contest</a></li>
+          <li><a style="text-decorations:none; color:inherit;" href="https://drive.google.com/open?id=1zKPKjsVRfZucW02I3BIuKZBxYZi8epWr">Honorable mention in the 2016 ACM-ICPC Bangladesh National Collegiate Programming Contest</a></li>
+          <li><a style="text-decorations:none; color:inherit;" href="https://university-of-chittagong.github.io/engg-day-2019-web/?fbclid=IwAR1e-MpQbIq4UB8ifPpyWfC_DKELA1e6L4GpX5cGqrhqe9rgPQ3ZRR6VoYA#speakers">Honorable judge of Engineering Day-2019 Programming Contest of University of Chittagong</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section id="education">
+    <div class="reveal" style="background-color: 	#eeeeee;">
+      <div class="row" >
+        <div class="col-12" style="padding-right: 2%;padding-left: 2%">
+          <div style="text-align: center;">
+            <h1 style="font-family:courier;text-align:center" >EDUCATION</h1>
+            <svg height="4" width="200">
+              <line x1="0" y1="0" x2="200" y2="0" style="stroke:rgb(234, 255, 3);stroke-width:5" />
+            </svg>
+          </div>
+          <h2  style="font-family:'Roboto', sans-serif;text-align: center">University of Chittagong</h2>
         </div>
       </div>
-      <div class="card">
-        <img class="card-img-top" src="assets/icons/csecpc2.png" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">CSECPC</h5>
-          <ul>
-            <li>A programming club blog for the students of CSE Department of the University of Chittagong.</li>
-            <li>It was built primarily for programming related discussions and queries.</li>
-            <li>It provides API for quering upcoming contests from  Codeforces,Codechef,devskill etc and also some internal contests.</li>
-          </ul>
-
-
-          <br>
-
-          <span class="badge badge-info float-left"> Laravel</span>
-          <span class="badge badge-info float-left"> MySQL </span>
-          <span class="badge badge-info float-left"> API </span>
-          <span class="badge badge-info float-left"> CSS </span>
-          <span class="badge badge-info float-left"> JS </span>
-          <span class="badge badge-info float-left"> JQuery </span>
-          <span class="badge badge-info float-left"> Bootstrap </span>
-          <span class="badge badge-info float-left"> HTML </span>
+      <div class="row justify-content-center"  style="height: 100%;">
+        <div class="col-5 col-sm">
+          <div class="float-right"><b>BSc in ENGINEERING</b></div>
         </div>
-        <div class="card-footer">
-          <span class="badge badge-dark float-left">Web</span>
-
-          <a href="https://github.com/peacekeeper117/cpc/"><i class="fab fa-github-alt fa-2x float-right"></i></a>
-          <a href="https://cliquecpc.000webhostapp.com/"><i style="margin: 10px;" class="fas fa-external-link-alt float-right"></i></a>
+        <div class="col-1 col-sm-1 "><p align="center" style="color: red;">&#8226;</p></div>
+        <div class="col-5 col-sm">
+          <div class="float-left"><b>COMPUTER SCIENCE &amp; ENGINEERING</b></div>
         </div>
+        <br>
       </div>
-      <div class="card">
-        <img class="card-img-top" src="assets/icons/dumpt.png" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">DumpIt</h5>
-          <ul>
-            <li>It help to manage keeping environment clean, waste dumping and sewerage system.</li>
-            <li>There are 3 different application for three types of users like 
+      <div class="row justify-content-center"  style="height: 100%; padding-left:5%; padding-right: 5% ;">
+        <p style="word-wrap: break-word;">I studied computer science and engineering at the University of Chittagong. Here I have gained knowledge on wide variety of subjects including programming, algorithm, data structure, software engineering, networking,  OOP, deep learning &amp; machine learning, articifial inteligence, peripherals, graphics &amp; image processing etc.</p>
+      </div>
+      <div class="row justify-content-center"  style="height: 100%;">
+        <p style="word-wrap: break-word;"><b>Graduating in : </b> <span class="name">February, 2020</span></p>
+      </div>
+    </div>
+  </section>
+  <section id="projects">
+    <div class="row">
+      <div class="col-12" style="padding-right: 2%;padding-left: 2%">
+        <div style="text-align: center;">
+          <h1 style="font-family:courier;text-align:center" >PROJECTS</h1>
+          <svg height="4" width="170">
+            <line x1="0" y1="0" x2="170" y2="0" style="stroke:rgb(3, 255, 104);stroke-width:5" />
+          </svg>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="card-deck">
+          <div class="card">
+            <img class="card-img-top" src="https://scx1.b-cdn.net/csz/news/800/2016/584ed5a993732.png" alt="Poster Heart Analysis">
+            <div class="card-body">
+              <h5 class="card-title">A COMPLETE STUDY OF HEART SOUND CLASSIFICATION USING MACHINE LEARNING TECHNIQUE</h5>
               <ul>
-                <li>dumpIt: for common user.</li>
-                <li> dumpIt-sweeper: for the user who take action for the incidents and </li> 
-                <li>dumpIt-admin: for the user who supervise the system, assign sweeper and other admin, manages the reports from the users.</li>
+                <li>It is the system which can detect heart problem specifically by recording sound of the heart.</li>
+                <li>Heart disease can be detected in earlier stage with cost effectively</li>
               </ul>
-            </li>
-          </ul>
-          <br>
-          <span class="badge badge-info float-left"> Java </span>
-          <span class="badge badge-info float-left"> XML </span>
-          <span class="badge badge-info float-left"> Firebase </span>
-          <span class="badge badge-info float-left"> Google Map </span>
+              <br>
+              <span class="badge badge-info float-left"> Python3</span>
+              <span class="badge badge-info float-left"> keras </span>
+              <span class="badge badge-info float-left"> tensorflow </span>
+            </div>
+            <div class="card-footer">
+              <a href="https://github.com/onucsecu2/heart_sound_classification"><i class="fab fa-github-alt fa-2x float-right"></i></a>
+            </div>
+          </div>
+          <div class="card">
+            <img class="card-img-top" src="assets/icons/csecpc2.png" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">CSECPC</h5>
+              <ul>
+                <li>A programming club blog for the students of CSE Department of the University of Chittagong.</li>
+                <li>It was built primarily for programming related discussions and queries.</li>
+                <li>It provides API for quering upcoming contests from  Codeforces,Codechef,devskill etc and also some internal contests.</li>
+              </ul>
+
+
+              <br>
+
+              <span class="badge badge-info float-left"> Laravel</span>
+              <span class="badge badge-info float-left"> MySQL </span>
+              <span class="badge badge-info float-left"> API </span>
+              <span class="badge badge-info float-left"> CSS </span>
+              <span class="badge badge-info float-left"> JS </span>
+              <span class="badge badge-info float-left"> JQuery </span>
+              <span class="badge badge-info float-left"> Bootstrap </span>
+              <span class="badge badge-info float-left"> HTML </span>
+            </div>
+            <div class="card-footer">
+              <span class="badge badge-dark float-left">Web</span>
+
+              <a href="https://github.com/peacekeeper117/cpc/"><i class="fab fa-github-alt fa-2x float-right"></i></a>
+              <a href="https://cliquecpc.000webhostapp.com/"><i style="margin: 10px;" class="fas fa-external-link-alt float-right"></i></a>
+            </div>
+          </div>
+          <div class="card">
+            <img class="card-img-top" src="assets/icons/dumpt.png" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">DumpIt</h5>
+              <ul>
+                <li>It help to manage keeping environment clean, waste dumping and sewerage system.</li>
+                <li>There are 3 different application for three types of users like
+                  <ul>
+                    <li>dumpIt: for common user.</li>
+                    <li> dumpIt-sweeper: for the user who take action for the incidents and </li>
+                    <li>dumpIt-admin: for the user who supervise the system, assign sweeper and other admin, manages the reports from the users.</li>
+                  </ul>
+                </li>
+              </ul>
+              <br>
+              <span class="badge badge-info float-left"> Java </span>
+              <span class="badge badge-info float-left"> XML </span>
+              <span class="badge badge-info float-left"> Firebase </span>
+              <span class="badge badge-info float-left"> Google Map </span>
+            </div>
+            <div class="card-footer">
+              <span class="badge badge-dark float-left">Android</span>
+              <a href="https://github.com/onucsecu2/heart_sound_classification"><i class="fab fa-github-alt fa-2x float-right"></i></a>
+            </div>
+          </div>
+
+
         </div>
-        <div class="card-footer">
-          <span class="badge badge-dark float-left">Android</span>
-          <a href="https://github.com/onucsecu2/heart_sound_classification"><i class="fab fa-github-alt fa-2x float-right"></i></a>
+
+
+
+
+
+
+        <br>
+
+
+
+
+        <div class="card-deck">
+          <div class="card">
+            <img class="card-img-top" src="assets/icons/momr.jpg" alt="Poster Heart Analysis">
+            <div class="card-body">
+              <h5 class="card-title">m-OMR</h5>
+              <ul>
+                <li>It can evaluate specific kind of OMR sheet by simply taking an image of the sheet.</li>
+              </ul>
+              <br>
+              <span class="badge badge-info float-left"> Java</span>
+              <span class="badge badge-info float-left"> XML </span>
+              <span class="badge badge-info float-left"> OpenCV </span>
+              <span class="badge badge-info float-left"> SQLite </span>
+            </div>
+            <div class="card-footer">
+              <span class="badge badge-dark float-left">Android</span>
+              <a href="https://github.com/onucsecu2/mobileOMR"><i class="fab fa-github-alt fa-2x float-right"></i></a>
+            </div>
+          </div>
+          <div class="card">
+            <img class="card-img-top" src="assets/icons/tubecatcher.png" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">TUBE-CATCHER</h5>
+              <ul>
+                <li>It download videos of given playlist from YouTube </li>
+              </ul>
+              <br>
+              <span class="badge badge-info float-left"> Python</span>
+              <span class="badge badge-info float-left"> Glade </span>
+              <span class="badge badge-info float-left"> youtube-dl</span>
+              <span class="badge badge-info float-left"> C# </span>
+              <span class="badge badge-info float-left"> WPF </span>
+
+            </div>
+            <div class="card-footer">
+              <span class="badge badge-dark float-left">Linux</span>
+              <span class="badge badge-dark float-left">Windows</span>
+
+              <a href="https://github.com/onucsecu2/tubecatcher"><i class="fab fa-github-alt fa-2x float-right"></i></a>
+              <!--   <a href="https://github.com/peacekeeper117/cpc/"><i style="margin: 10px;" class="fas fa-external-link-alt float-right"></i></a> -->
+            </div>
+          </div>
+          <div class="card">
+            <img class="card-img-top" src="assets/icons/bblog.png" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">BASIC BLOG</h5>
+              <ul>
+                <li>It is simple blog system where user can post, comment.</li>
+                <li>Admin approval is needed for each post. </li>
+              </ul>
+              <br>
+              <span class="badge badge-info float-left"> Laravel </span>
+              <span class="badge badge-info float-left"> MySql</span>
+              <span class="badge badge-info float-left"> Bootstrap </span>
+              <span class="badge badge-info float-left"> JavaScript</span>
+              <span class="badge badge-info float-left"> JQuery </span>
+              <span class="badge badge-info float-left"> html</span>
+              <span class="badge badge-info float-left"> CSS</span>
+            </div>
+            <div class="card-footer">
+              <span class="badge badge-dark float-left">Web</span>
+              <a href="https://github.com/onucsecu2/heart_sound_classification"><i class="fab fa-github-alt fa-2x float-right"></i></a>
+            </div>
+          </div>
         </div>
+
+
+
+        <br>
+
+        <div class="card-deck">
+          <div class="card">
+            <img class="card-img-top" src="https://warehouse-camo.ingress.cmh1.psfhosted.org/ff98d54caaa928ba7d5bd08e68b12aad2e134736/68747470733a2f2f73656c656e69756d2e6465762f696d616765732f73656c656e69756d5f6c6f676f5f7371756172655f677265656e2e706e67" alt="Poster Heart Analysis">
+            <div class="card-body">
+              <h5 class="card-title">GOOGLE PHOTOS DOWNLOADER</h5>
+              <ul>
+                <li>It collects photos from google page.</li>
+                <li>It is made for enriching image data for research purposes.</li>
+              </ul>
+              <br>
+              <span class="badge badge-info float-left"> Java</span>
+              <span class="badge badge-info float-left"> Java-swing </span>
+              <span class="badge badge-info float-left"> Selenium</span>
+            </div>
+            <div class="card-footer">
+              <span class="badge badge-dark float-left">Standalone Application</span>
+              <a href="https://github.com/onucsecu2/GooglePhotosDownloaderJavaSelenium"><i class="fab fa-github-alt fa-2x float-right"></i></a>
+            </div>
+          </div>
+          <div class="card">
+            <img class="card-img-top" src="https://warehouse-camo.ingress.cmh1.psfhosted.org/ff98d54caaa928ba7d5bd08e68b12aad2e134736/68747470733a2f2f73656c656e69756d2e6465762f696d616765732f73656c656e69756d5f6c6f676f5f7371756172655f677265656e2e706e67" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">GOOGLE TRANSLATOR SELENIUM</h5>
+              <ul>
+                <li>It can translate a dataset from English to Bangla using google translator.</li>
+              </ul>
+              <br>
+              <span class="badge badge-info float-left"> Java</span>
+              <span class="badge badge-info float-left"> Java-swing </span>
+              <span class="badge badge-info float-left"> Selenium </span>
+            </div>
+            <div class="card-footer">
+              <span class="badge badge-dark float-left">Standalone Application</span>
+
+              <a href="https://github.com/onucsecu2/GoogleTranslatorSeleniumJava"><i class="fab fa-github-alt fa-2x float-right"></i></a>
+              <!--   <a href="https://github.com/peacekeeper117/cpc/"><i style="margin: 10px;" class="fas fa-external-link-alt float-right"></i></a> -->
+            </div>
+          </div>
+          <div class="card">
+            <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSoW7QOTFarPev2vy-9oa3mBMOSOAthUk_7_3DQpcAcaPixT0vO&usqp=CAU" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">TaskScheduler</h5>
+              <ul>
+                <li>User can save the schedule of the daily tasks.</li>
+                <li> System notify the user prior to starting of the task.</li>
+              </ul>
+              <br>
+              <span class="badge badge-info float-left"> Java </span>
+              <span class="badge badge-info float-left"> XML</span>
+              <span class="badge badge-info float-left"> SQLite </span>
+            </div>
+            <div class="card-footer">
+              <span class="badge badge-dark float-left">Android</span>
+              <a href="https://github.com/onucsecu2/TaskSceduler"><i class="fab fa-github-alt fa-2x float-right"></i></a>
+            </div>
+          </div>
+
+        </div>
+        <br>
       </div>
-
-
     </div>
-
-
-
-
-
-
-    <br>
-
-
-
-
-    <div class="card-deck">
-      <div class="card">
-        <img class="card-img-top" src="assets/icons/momr.jpg" alt="Poster Heart Analysis">
-        <div class="card-body">
-          <h5 class="card-title">m-OMR</h5>
-          <ul>
-            <li>It can evaluate specific kind of OMR sheet by simply taking an image of the sheet.</li>
-          </ul>
-          <br>
-          <span class="badge badge-info float-left"> Java</span>
-          <span class="badge badge-info float-left"> XML </span>
-          <span class="badge badge-info float-left"> OpenCV </span>
-          <span class="badge badge-info float-left"> SQLite </span>
-        </div>
-        <div class="card-footer">
-          <span class="badge badge-dark float-left">Android</span>
-          <a href="https://github.com/onucsecu2/mobileOMR"><i class="fab fa-github-alt fa-2x float-right"></i></a>
-        </div>
-      </div>
-      <div class="card">
-        <img class="card-img-top" src="assets/icons/tubecatcher.png" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">TUBE-CATCHER</h5>
-          <ul>
-            <li>It download videos of given playlist from YouTube </li>
-          </ul>
-          <br>
-          <span class="badge badge-info float-left"> Python</span>
-          <span class="badge badge-info float-left"> Glade </span>
-          <span class="badge badge-info float-left"> youtube-dl</span>
-          <span class="badge badge-info float-left"> C# </span>
-          <span class="badge badge-info float-left"> WPF </span>
-          
-        </div>
-        <div class="card-footer">
-          <span class="badge badge-dark float-left">Linux</span>
-          <span class="badge badge-dark float-left">Windows</span>
-
-          <a href="https://github.com/onucsecu2/tubecatcher"><i class="fab fa-github-alt fa-2x float-right"></i></a>
-        <!--   <a href="https://github.com/peacekeeper117/cpc/"><i style="margin: 10px;" class="fas fa-external-link-alt float-right"></i></a> -->
-        </div>
-      </div>
-      <div class="card">
-        <img class="card-img-top" src="assets/icons/bblog.png" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">BASIC BLOG</h5>
-          <ul>
-            <li>It is simple blog system where user can post, comment.</li>
-            <li>Admin approval is needed for each post. </li>
-          </ul>
-          <br>
-          <span class="badge badge-info float-left"> Laravel </span>
-          <span class="badge badge-info float-left"> MySql</span>
-          <span class="badge badge-info float-left"> Bootstrap </span>
-          <span class="badge badge-info float-left"> JavaScript</span>
-          <span class="badge badge-info float-left"> JQuery </span>
-          <span class="badge badge-info float-left"> html</span>
-          <span class="badge badge-info float-left"> CSS</span>
-        </div>
-        <div class="card-footer">
-          <span class="badge badge-dark float-left">Web</span>
-          <a href="https://github.com/onucsecu2/heart_sound_classification"><i class="fab fa-github-alt fa-2x float-right"></i></a>
-        </div>
-      </div>
-    </div>
-
-    
-
-    <br>
-
-    <div class="card-deck">
-      <div class="card">
-        <img class="card-img-top" src="https://warehouse-camo.ingress.cmh1.psfhosted.org/ff98d54caaa928ba7d5bd08e68b12aad2e134736/68747470733a2f2f73656c656e69756d2e6465762f696d616765732f73656c656e69756d5f6c6f676f5f7371756172655f677265656e2e706e67" alt="Poster Heart Analysis">
-        <div class="card-body">
-          <h5 class="card-title">GOOGLE PHOTOS DOWNLOADER</h5>
-          <ul>
-            <li>It collects photos from google page.</li>
-            <li>It is made for enriching image data for research purposes.</li>
-          </ul>
-          <br>
-          <span class="badge badge-info float-left"> Java</span>
-          <span class="badge badge-info float-left"> Java-swing </span>
-          <span class="badge badge-info float-left"> Selenium</span>
-        </div>
-        <div class="card-footer">
-          <span class="badge badge-dark float-left">Standalone Application</span>
-          <a href="https://github.com/onucsecu2/GooglePhotosDownloaderJavaSelenium"><i class="fab fa-github-alt fa-2x float-right"></i></a>
-        </div>
-      </div>
-      <div class="card">
-        <img class="card-img-top" src="https://warehouse-camo.ingress.cmh1.psfhosted.org/ff98d54caaa928ba7d5bd08e68b12aad2e134736/68747470733a2f2f73656c656e69756d2e6465762f696d616765732f73656c656e69756d5f6c6f676f5f7371756172655f677265656e2e706e67" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">GOOGLE TRANSLATOR SELENIUM</h5>
-          <ul>
-            <li>It can translate a dataset from English to Bangla using google translator.</li>
-          </ul>
-          <br>
-          <span class="badge badge-info float-left"> Java</span>
-          <span class="badge badge-info float-left"> Java-swing </span>
-          <span class="badge badge-info float-left"> Selenium </span>
-        </div>
-        <div class="card-footer">
-          <span class="badge badge-dark float-left">Standalone Application</span>
-
-          <a href="https://github.com/onucsecu2/GoogleTranslatorSeleniumJava"><i class="fab fa-github-alt fa-2x float-right"></i></a>
-        <!--   <a href="https://github.com/peacekeeper117/cpc/"><i style="margin: 10px;" class="fas fa-external-link-alt float-right"></i></a> -->
-        </div>
-      </div>
-      <div class="card">
-        <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSoW7QOTFarPev2vy-9oa3mBMOSOAthUk_7_3DQpcAcaPixT0vO&usqp=CAU" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">TaskScheduler</h5>
-          <ul>
-            <li>User can save the schedule of the daily tasks.</li>
-            <li> System notify the user prior to starting of the task.</li>
-          </ul>
-          <br>
-          <span class="badge badge-info float-left"> Java </span>
-          <span class="badge badge-info float-left"> XML</span>
-          <span class="badge badge-info float-left"> SQLite </span>
-        </div>
-        <div class="card-footer">
-          <span class="badge badge-dark float-left">Android</span>
-          <a href="https://github.com/onucsecu2/TaskSceduler"><i class="fab fa-github-alt fa-2x float-right"></i></a>
-        </div>
-      </div>
-
-    </div>
-    <br>
-  </div>
-</div>
-</div>
-
-
+  </section>
+</main>
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 
