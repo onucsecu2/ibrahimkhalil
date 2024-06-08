@@ -26,7 +26,7 @@ SECTIONS:
       en: What I am doing
     content:
       paragraph:
-        en: I killed tiger and bear.
+        en: <p>I killed tiger and bear.<p>
       project:
         - description:
             en: It is a backwase app
@@ -38,13 +38,9 @@ SECTIONS:
           media: asset/panama.jpg
           alt: project image
           link: www.asja.com
-
-
 MISCELLANEOUS:
   contacts:
-    git:
-      href: https://github.com/onucsecu2
+    - href: https://github.com/onucsecu2
       icon: <i class="fas fa-phone-alt fa-2x"></i>
-    mail:
-      href: mailto:onucsecu@gmail.com
+    - href: mailto:onucsecu@gmail.com
       icon: <i class="far fa-envelope fa-2x"></i>
