@@ -1,12 +1,12 @@
 SECTIONS:
   - title:
-      en: ABOUT ME
-      jp: 自分について
+      en:
+      jp:
     content:
-      en: <p> My name is Khalil. I am a computer science and engineering graduate. I have passion for my own field. I find interest in programming and developing software or building a software system on the basis of real life problems. I love to learn and brainstorm to apply my knowledge ethically.<p>
-          <p> I love to spend my leisure time by solving puzzles and practicing competitive programming. I have keen interest in learning new languages. I can speak japanese a little too.</p>
+      en: <p>Hello! My name is Khalil, a Software Engineer based in Miyazaki, Japan. I have experience in taking fullstack applications from scratch to production. I can manage the entire process, from coding to deploying on the server, to bring ideas to life. I like to introduce myself as your right-hand partner in the team, ensuring that our vision becomes a reality.</p>
   - title:
-      en: What I can do
+      en: What I do
+      jp: できる
   - title:
       en: Where I Was involved
     content:

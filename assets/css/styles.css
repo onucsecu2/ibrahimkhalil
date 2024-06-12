@@ -1,7 +1,7 @@
-p {
-   font-family: 'Open Sans', sans-serif;
-    word-wrap: break-word;
-}
+/*p {*/
+/*   font-family: 'Open Sans', sans-serif;*/
+/*    word-wrap: break-word;*/
+/*}*/
 a {
     text-decoration:none;
     color:inherit;
@@ -31,10 +31,90 @@ line {
     stroke:rgb(179, 4, 36);
     stroke-width:5;
 }
+section {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    /*flex-wrap: nowrap;*/
+    justify-content: center;
+}
 .section-heading {
     text-align: center;
 }
 
 .section-bg {
     background-color: #eeeeee;
+}
+.contact-media {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.location-text {
+    color: #4C4C4C;
+    font-weight: 600;
+    cursor: pointer;
+    border-bottom: 1px solid #c1c1c1;
+    border-radius: 4px;
+
+}
+
+.location-detailed-image {
+    background-image: url("../img/location.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 999;
+    display: none;
+    position: relative;
+    width: 225px;
+    height: 150px;
+    padding: 15px;
+    background-color: #fff;
+    border: 1px solid #c1c1c1;
+    border-radius: 4px;
+    box-shadow: 0 0 10px #c1c1c1;
+    margin-top: -135px;
+    margin-left: -225px;
+    left: 110px;
+    top: -45px;
+}
+.location-detailed-image:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: 23px;
+    bottom: -42px;
+    border: 10px solid transparent;
+    border-top: 32px solid rgb(193,193,193); /* IE8 Fallback */
+    border-top: 32px solid rgba(193,193,193,0.5);
+    z-index: 2;
+}
+.location-detailed-image:after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: 25px;
+    bottom: -31px;
+    border: 8px solid transparent;
+    border-top: 24px solid #000;
+    z-index: 3;
+
+}
+.animate-fade {
+    opacity: 1;
+    transition: 1s;
+}
+.animate-fade.fade-out {
+    opacity: 0;
+    transition: 1s;
+}
+
+.intro-text {
+    font-size: xxx-large;
+    font-weight: 100;
+    font-stretch: semi-condensed;
 }
