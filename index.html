@@ -2,507 +2,268 @@
 <html lang="en">
 <head>
   <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-  <!-- Required meta tags -->
   <meta charset="utf-8">
+  <meta name="description" content="Explore Muhammod Ibrahim Khalil's (aka onucsecu) portfolio: skills, projects, work history, and motivation. Discover his professional journey now!">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!--    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">-->
   <link href="https://fonts.googleapis.com/css?family=Roboto:500&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
-  <link href="http://allfont.net/allfont.css?fonts=league-spartan" rel="stylesheet" type="text/css" />
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap" rel="stylesheet">
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   <script src="https://kit.fontawesome.com/84f006a9fc.js" crossorigin="anonymous"></script>
-
-  <style>
-    p.detail { color:#4C4C4C;font-family:Calibri;}
-    span.name { color:#0044b3;font-family:Tahoma; }
-    .reveal
-    {
-      opacity:0;
-    }
-    .badge
-    {
-      margin: 5px;
-    }
-  </style>
-
-  <script>
-    $(document).ready(function() {
-
-      /* Every time the window is scrolled ... */
-      $(window).scroll( function(){
-
-        /* Check the location of each desired element */
-        $('.reveal').each( function(i){
-
-          var bottom_of_object = $(this).position().top + $(this).outerHeight()/2;
-          var bottom_of_window = $(window).scrollTop() + $(window).height();
-
-          /* If the object is completely visible in the window, fade it it */
-          if( bottom_of_window > bottom_of_object ){
-
-            $(this).animate({'opacity':'1'},1500);
-
-          }
-
-        }); 
-
-      });
-
-    });
-  </script>
-  <title>Muhammod Ibrahim Khalil</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.1.0/js-yaml.js"></script>
+  <!-- Custom css  -->
+  <link href="assets/css/styles.css" rel="stylesheet"/>
+  <title>Khalil | Portfolio</title>
 </head>
-<body data-spy="scroll" data-target="#navbarNav" data-offset="500">
- <nav  class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div id="navbarNav" class="collapse navbar-collapse justify-content-center">
-    <ul class="navbar-nav">
-      <li class="nav-item">
-        <a class="nav-link" href="#aboutme" >ABOUT ME</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#skills">SKILLS</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#cocurriculum">CO-CURRICULUM</a>
-      </li>			  
-      <li class="nav-item">
-        <a class="nav-link" href="#education" >EDUCATION</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#projects">PROJECTS</a>
-      </li>
-
-    </ul>
-  </div>
-
-</nav>
-
-
-<br id="aboutme">
-
-<div class="container-fluid flex-wrap">
-
-  <center>
-    <h1 style="font-family:courier;">ABOUT ME</h1>
-    <svg height="4" width="170">
-      <line x1="0" y1="0" x2="200" y2="0" style="stroke:rgb(128, 131, 135);stroke-width:5" />
-    </svg>
-  </center>
-  <div class="row">
-    <div class="col-12 col-sm-4">
-      <img src="icons/dp.jpg" style="object-fit: cover;width: 100%;height: 100%;">
+<body data-spy="scroll">
+<main class="container-fluid">
+  <button id="fixedbutton" name="floatBtn" type="button" onClick="location.href='#'" class="btn btn-outline-dark"><i class="fas fa-chevron-up"></i></button>
+  <header>
+    <div class="text-muted text-end pt-2">
+      <i class="fas fa-globe"></i>
+      <span>JP</span>
+      <span> | </span>
+      <span>EN</span>
     </div>
-
-    <div class="col-12 col-sm-8" style="padding-right: 2%">
-      <!--            <h4 style="word-wrap: break-word;">Hello there,</h4>-->
-      <br>
-      <p align="justify" style=" font-family: 'Open Sans', sans-serif; word-wrap: break-word;">My name is Muhammod Ibrahim Khalil. I am a computer science and engineering graduate. I have passion for my own field. I find interest in programming and developing software or building a software system on the basis of real life problems. I love to learn and brainstorm to apply my knowledge ethically.
-        <br>
-      I love to spend my leisure time by solving puzzles and practicing competitive programming. I have keen interest in learning new languages. I can speak japanese a little too.</p>      
-      <div class="row" style="word-wrap: break-word">
-        <div class="col-6 col-sm-4" style="padding-right: 2%">
-          <a style="text-decorations:none; color:inherit;" href="https://github.com/onucsecu2/"><i class="fab fa-github-square fa-2x"></i> <span><b>https://github.com/onucsecu2</b></span></a>
-        </div>
-        <div class="col-6 col-sm-4" style="padding-right: 2%">
-          <a style="text-decorations:none; color:inherit;" href="tel:+8801863610265"><i class="fas fa-phone-alt fa-2x">&nbsp;&nbsp;</i><span><b>(+88)018-63610265</b></span></a>
-        </div>
+  </header>
+  <section class="container" id="aboutme">
+    <div class="row">
+      <div class="col-12 col-sm-4">
+        <img class="dp" alt="Photo of Khalil aka onucsecu" src="assets/img/dp.jpg">
       </div>
-      <div class="row">
-        <div class="col-6 col-sm-4" style="padding-right: 2%">
-          <a style="text-decorations:none; color:inherit; " href="mailto:onucsecu@gmail.com"><i class="far fa-envelope fa-2x"></i><span> <b> onucsecu@gmail.com </b></span></a>
+      <div class="col-12 col-sm-8">
+        <!--about me-->
+          <p class="greeting-text">Nice to meet you</p>
+          <p class="intro-text">Hi There, I'm Khalil.</p>
+          <p class="lead">
+            I am a <a class="reference_text" href="#education">Software Engineer</a> based in
+            <span class="reference_text"
+               data-bs-toggle="tooltip" data-bs-html="true"
+               title="<img src='assets/img/location.jpg' alt='Location of Miyazaki' class='location-detailed-image'/>">
+              Miyazaki, Japan.
+            </span>
+            I have <a class="reference_text" href="#career">professional experience</a> in taking <a class="reference_text" href="#skills">fullstack applications</a>
+            from scratch to production. I can manage the entire process, from coding to deploying on the server,
+            to bring ideas to life. I like to <a class="reference_text" href="#more">introduce myself</a> as your right-hand partner in the team, ensuring that our vision becomes a reality.</p>
+        <div class="contact-media">
+          <p class="lead"><a class="reference_text" href="#footer">Get in touch</a> &#8594;</p> <i class="far fa-envelope fa-2x"></i> onucsecu@gmail.com</i>
         </div>
       </div>
     </div>
-  </div>  
-  <br>
-  <br>
-  <br id="skills">
-  <div style="background-color: 	#eeeeee;">
-    <br>
-    <br>
-    <div class="row reveal">
-      <div class="col-sm-12" style="padding-right: 2%;padding-left: 2%">
-        <center>
-          <h1 style="font-family:courier;text-align:center" >SKILLS</h1>
-          <svg height="4" width="120">
-            <line x1="0" y1="0" x2="200" y2="0" style="stroke:rgb(179, 4, 36);stroke-width:5" />
-          </svg>
-        </center>
-        <br>
-        <p  style="font-family: 'Open Sans', sans-serif;text-align: center">I have some basic idea about syntax of few programming languages and I am familiar with software, tools and frameworks. However, language is not matter for me. I am a quick learner and I can shift to other languages as per recquirement.</p>
-        <p align="justify" style="word-wrap: break-word;"></p>
+  </section>
+  <section id="skills" class="reveal">
+    <p class="lead text-center">Versatile in various technologies and languages,  I can easily transfer my skills to new challenges.
+      I’ve used these technologies in both professional projects and spare-time, idea-driven endeavors.
+      I have developed Web, Desktop and Mobile application using these tech.</p>
+    <div class="row mt-4 mx-3">
+      <div class="col-12 col-sm-4">
+        <p class="  text-end">Language</p>
+      </div>
+      <div class="col-12 col-sm-8">
+        <p>Typescript, Javascript, Python, Java, PHP, C++</p>
       </div>
     </div>
-    <div class="row reveal" style="height: 100%; padding-right: 5%;padding-left: 5% ">
-      <div class="col-12 col-sm-7">
-        <h5 style="font-family: League Spartan Bold; word-wrap: break-word;">TECHNICAL SKILLS</h5>
-        <br>
-
-        <ul style="font-family: 'Open Sans', sans-serif;">
-          <li >Web Development using PHP Laravel framework </li>
-          <li>Android Application development using JAVA and Android Studio</li>
-          <li>Competitive Programming experience in C/C++</li>
-          <li>Python Programming in Data-Science and Machine Learning</li>
-          <li>MySQL, SQLite and Firebase Database management</li>
-          <li>Basic practical idea about JavaSwing, selenium webdriver</li>
-          <li>OpenCV with python and android studio</li>
-          <li>Git version control</li>
-          <li>Familiar with both Linux and Windows environment</li>
-        </ul>
+    <div class="row mt-4 mx-3">
+      <div class="col-12 col-sm-4">
+        <p class="  text-end">Frontend</p>
       </div>
-      <div class="col-12 col-sm-5">
-        <h4 style="font-family: League Spartan Bold; word-wrap: break-word;">PROGRAMMING LANGUAGES AND TOOLS</h4>
-        <br>
-        <div class="row">
-         <div class="col col-sm">
-           <figure><i class="fab fa-java fa-3x"></i><figcaption><p><strong>Java</strong></p></figcaption></figure>
-         </div>
-         <div class="col col-sm"><figure><i class="fab fa-python fa-3x"></i><figcaption><p><strong>Python3</strong></p></figcaption></figure></div>
-         <div class="col col-sm"><figure><i class="fab fa-php fa-3x"></i><figcaption><p><strong>php</strong></p></figcaption></figure></div>
-       </div>
-       <div class="row">
-         <div class="col col-sm"><figure><i class="fab fa-laravel fa-3x"></i><figcaption><p><strong>Laravel</strong></p></figcaption></figure></div>
-         <div class="col col-sm"><figure><i class="fab fa-github fa-3x"></i><figcaption><p><strong>Github</strong></p></figcaption></figure></div>
-         <div class="col col-sm"><figure><img src="icons/androidstudio.png"><figcaption><p><strong>Android Studio</strong></p></figcaption></figure></div>                   
-         <div class="col col-sm"><figure><i class="fab fa-linux fa-3x"></i><figcaption><p><strong>Linux</strong></p></figcaption></figure></div>
-
-       </div>
-       <div class="row">
-        <div class="col col-sm"><figure><i class="fas fa-database fa-3x"></i><figcaption><p><strong>MySQL, SQLite &amp; Firebase</strong> </p></figcaption></figure>
-        </div>
-        <div class="col col-sm"><figure><i class="fab fa-js-square fa-3x"></i></i><figcaption><p><strong>JavaScript</strong> </p></figcaption></figure>
-        </div>
-        <div class="col col-sm"><figure><img src="icons/opencv.png"></figure></div>
-        <div class="col col-sm"><figure><i class="fas fa-brain fa-3x"></i><figcaption><p><strong>Keras &amp; Tensorflow</strong></p></figcaption></figure>
-        </div>
+      <div class="col-12 col-sm-8">
+        <p>Angular(RxJs, ngRx, signal), Vue(<del>Vuex</del> Pinia), React(Redux, MobX), HTML, CSS, SCSS.</p>
       </div>
     </div>
-  </div>
-  <br>
-  <br>
-  <br id="cocurriculum">
-  <br>
-</div>
-<div class="row reveal">      
-  <div class="col-md-12" style="padding-right: 2%;padding-left: 2%">
-    <br>
-    <br>
-    <br>
-    <br>
-    <center>
-      <h1 style="font-family:courier;text-align:center" >CO-CURRICULUM ACTIVITIES</h1>
-      <svg height="4" width="40%">
-        <line x1="0" y1="0" x2="100%" y2="0" style="stroke:rgb(255, 99, 3);stroke-width:5" />
-      </svg>
-    </center>
-
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <ul>
-      <li><a style="text-decorations:none; color:inherit;" href="https://drive.google.com/open?id=1mjW8S-zDwkhSjIgYJ1YLlRQsHZLKM6ga">Honorabale mention in the 2016 ACM-ICPC Asia Dhaka Regional Contest</a></li>
-      <li><a style="text-decorations:none; color:inherit;" href="https://drive.google.com/open?id=1zKPKjsVRfZucW02I3BIuKZBxYZi8epWr">Honorable mention in the 2016 ACM-ICPC Bangladesh National Collegiate Programming Contest</a></li>
-      <li><a style="text-decorations:none; color:inherit;" href="https://university-of-chittagong.github.io/engg-day-2019-web/?fbclid=IwAR1e-MpQbIq4UB8ifPpyWfC_DKELA1e6L4GpX5cGqrhqe9rgPQ3ZRR6VoYA#speakers">Honorable judge of Engineering Day-2019 Programming Contest of University of Chittagong</a></li>
-
-    </ul>
-  </div>
-</div>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br id="education">
-<div class="reveal" style="background-color: 	#eeeeee;">
-  <div class="row" >
-    <div class="col-12" style="padding-right: 2%;padding-left: 2%">
-      <br>
-      <br>
-      <br>
-      <center>
-        <h1 style="font-family:courier;text-align:center" >EDUCATION</h1>
-        <svg height="4" width="200">
-          <line x1="0" y1="0" x2="200" y2="0" style="stroke:rgb(234, 255, 3);stroke-width:5" />
-        </svg>
-      </center>
-      <br>
-      <br>
-      <h2  style="font-family:'Roboto', sans-serif;text-align: center">University of Chittagong</h2>
-    </div>
-    <br>
-  </div>
-  <div class="row justify-content-center"  style="height: 100%;">
-
-    <div class="col-5 col-sm">
-      <div class="float-right"><b>BSc in ENGINEERING</b></div> 
-    </div> 
-    <div class="col-1 col-sm-1 "><p align="center" style="color: red;">&#8226;</p></div>
-    <div class="col-5 col-sm">
-      <div class="float-left"><b>COMPUTER SCIENCE &amp; ENGINEERING</b></div>
-    </div>
-    <br>
-  </div>
-  <div class="row justify-content-center"  style="height: 100%; padding-left:5%; padding-right: 5% ;">
-    <br>
-    <p align="justify" style="word-wrap: break-word;">I studied computer science and engineering at the University of Chittagong. Here I have gained knowledge on wide variety of subjects including programming, algorithm, data structure, software engineering, networking,  OOP, deep learning &amp; machine learning, articifial inteligence, peripherals, graphics &amp; image processing etc.</p>
-    <br>
-  </div>    
-  <div class="row justify-content-center"  style="height: 100%;">
-    <p align="justify" style="word-wrap: break-word;"><b>Graduating in : </b> <span class="name">February, 2020</span></p>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br id="projects">
-  </div>
-
-</div>
-<div class="row">
-
-  <div class="col-12" style="padding-right: 2%;padding-left: 2%">
-    <br>
-    <br>
-    <br>
-    <br>
-    <center>
-      <h1 style="font-family:courier;text-align:center" >PROJECTS</h1>
-      <svg height="4" width="170">
-        <line x1="0" y1="0" x2="170" y2="0" style="stroke:rgb(3, 255, 104);stroke-width:5" />
-      </svg>  
-    </center>
-    <br>
-    <br>
-    <br>
-    <div class="card-deck">
-      <div class="card">
-        <img class="card-img-top" src="https://scx1.b-cdn.net/csz/news/800/2016/584ed5a993732.png" alt="Poster Heart Analysis">
-        <div class="card-body">
-          <h5 class="card-title">A COMPLETE STUDY OF HEART SOUND CLASSIFICATION USING MACHINE LEARNING TECHNIQUE</h5>
-          <ul>
-            <li>It is the system which can detect heart problem specifically by recording sound of the heart.</li>
-            <li>Heart disease can be detected in earlier stage with cost effectively</li>
-          </ul>
-          <br>
-          <span class="badge badge-info float-left"> Python3</span>
-          <span class="badge badge-info float-left"> keras </span>
-          <span class="badge badge-info float-left"> tensorflow </span>
-        </div>
-        <div class="card-footer">
-          <a href="https://github.com/onucsecu2/heart_sound_classification"><i class="fab fa-github-alt fa-2x float-right"></i></a>
-        </div>
+    <div class="row mt-4 mx-3">
+      <div class="col-12 col-sm-4">
+        <p class="  text-end">Backend</p>
       </div>
-      <div class="card">
-        <img class="card-img-top" src="icons/csecpc2.png" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">CSECPC</h5>
-          <ul>
-            <li>A programming club blog for the students of CSE Department of the University of Chittagong.</li>
-            <li>It was built primarily for programming related discussions and queries.</li>
-            <li>It provides API for quering upcoming contests from  Codeforces,Codechef,devskill etc and also some internal contests.</li>
-          </ul>
-
-
-          <br>
-
-          <span class="badge badge-info float-left"> Laravel</span>
-          <span class="badge badge-info float-left"> MySQL </span>
-          <span class="badge badge-info float-left"> API </span>
-          <span class="badge badge-info float-left"> CSS </span>
-          <span class="badge badge-info float-left"> JS </span>
-          <span class="badge badge-info float-left"> JQuery </span>
-          <span class="badge badge-info float-left"> Bootstrap </span>
-          <span class="badge badge-info float-left"> HTML </span>
-        </div>
-        <div class="card-footer">
-          <span class="badge badge-dark float-left">Web</span>
-
-          <a href="https://github.com/peacekeeper117/cpc/"><i class="fab fa-github-alt fa-2x float-right"></i></a>
-          <a href="https://cliquecpc.000webhostapp.com/"><i style="margin: 10px;" class="fas fa-external-link-alt float-right"></i></a>
-        </div>
-      </div>
-      <div class="card">
-        <img class="card-img-top"  src="icons/dumpt.png" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">DumpIt</h5>
-          <ul>
-            <li>It help to manage keeping environment clean, waste dumping and sewerage system.</li>
-            <li>There are 3 different application for three types of users like 
-              <ul>
-                <li>dumpIt: for common user.</li>
-                <li> dumpIt-sweeper: for the user who take action for the incidents and </li> 
-                <li>dumpIt-admin: for the user who supervise the system, assign sweeper and other admin, manages the reports from the users.</li>
-              </ul>
-            </li>
-          </ul>
-          <br>
-          <span class="badge badge-info float-left"> Java </span>
-          <span class="badge badge-info float-left"> XML </span>
-          <span class="badge badge-info float-left"> Firebase </span>
-          <span class="badge badge-info float-left"> Google Map </span>
-        </div>
-        <div class="card-footer">
-          <span class="badge badge-dark float-left">Android</span>
-          <a href="https://github.com/onucsecu2/heart_sound_classification"><i class="fab fa-github-alt fa-2x float-right"></i></a>
-        </div>
-      </div>
-
-
-    </div>
-
-
-
-
-
-
-    <br>
-
-
-
-
-    <div class="card-deck">
-      <div class="card">
-        <img class="card-img-top" src="icons/momr.jpg" alt="Poster Heart Analysis">
-        <div class="card-body">
-          <h5 class="card-title">m-OMR</h5>
-          <ul>
-            <li>It can evaluate specific kind of OMR sheet by simply taking an image of the sheet.</li>
-          </ul>
-          <br>
-          <span class="badge badge-info float-left"> Java</span>
-          <span class="badge badge-info float-left"> XML </span>
-          <span class="badge badge-info float-left"> OpenCV </span>
-          <span class="badge badge-info float-left"> SQLite </span>
-        </div>
-        <div class="card-footer">
-          <span class="badge badge-dark float-left">Android</span>
-          <a href="https://github.com/onucsecu2/mobileOMR"><i class="fab fa-github-alt fa-2x float-right"></i></a>
-        </div>
-      </div>
-      <div class="card">
-        <img class="card-img-top" src="icons/tubecatcher.png" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">TUBE-CATCHER</h5>
-          <ul>
-            <li>It download videos of given playlist from YouTube </li>
-          </ul>
-          <br>
-          <span class="badge badge-info float-left"> Python</span>
-          <span class="badge badge-info float-left"> Glade </span>
-          <span class="badge badge-info float-left"> youtube-dl</span>
-        </div>
-        <div class="card-footer">
-          <span class="badge badge-dark float-left">Linux</span>
-
-          <a href="https://github.com/onucsecu2/tubecatcher"><i class="fab fa-github-alt fa-2x float-right"></i></a>
-        <!--   <a href="https://github.com/peacekeeper117/cpc/"><i style="margin: 10px;" class="fas fa-external-link-alt float-right"></i></a> -->
-        </div>
-      </div>
-      <div class="card">
-        <img class="card-img-top" src="icons/bblog.png" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">BASIC BLOG</h5>
-          <ul>
-            <li>It is simple blog system where user can post, comment.</li>
-            <li>Admin approval is needed for each post. </li>
-          </ul>
-          <br>
-          <span class="badge badge-info float-left"> Laravel </span>
-          <span class="badge badge-info float-left"> MySql</span>
-          <span class="badge badge-info float-left"> Bootstrap </span>
-          <span class="badge badge-info float-left"> JavaScript</span>
-          <span class="badge badge-info float-left"> JQuery </span>
-          <span class="badge badge-info float-left"> html</span>
-          <span class="badge badge-info float-left"> CSS</span>
-        </div>
-        <div class="card-footer">
-          <span class="badge badge-dark float-left">Web</span>
-          <a href="https://github.com/onucsecu2/heart_sound_classification"><i class="fab fa-github-alt fa-2x float-right"></i></a>
-        </div>
+      <div class="col-12 col-sm-8">
+        <p>Django, Springboot, FastAPI, Laravel</p>
       </div>
     </div>
-
-    
-
-    <br>
-
-    <div class="card-deck">
-      <div class="card">
-        <img class="card-img-top" src="https://warehouse-camo.ingress.cmh1.psfhosted.org/ff98d54caaa928ba7d5bd08e68b12aad2e134736/68747470733a2f2f73656c656e69756d2e6465762f696d616765732f73656c656e69756d5f6c6f676f5f7371756172655f677265656e2e706e67" alt="Poster Heart Analysis">
-        <div class="card-body">
-          <h5 class="card-title">GOOGLE PHOTOS DOWNLOADER</h5>
-          <ul>
-            <li>It collects photos from google page.</li>
-            <li>It is made for enriching image data for research purposes.</li>
-          </ul>
-          <br>
-          <span class="badge badge-info float-left"> Java</span>
-          <span class="badge badge-info float-left"> Java-swing </span>
-          <span class="badge badge-info float-left"> Selenium</span>
-        </div>
-        <div class="card-footer">
-          <span class="badge badge-dark float-left">Standalone Application</span>
-          <a href="https://github.com/onucsecu2/GooglePhotosDownloaderJavaSelenium"><i class="fab fa-github-alt fa-2x float-right"></i></a>
-        </div>
+    <div class="row mt-4 mx-3">
+      <div class="col-12 col-sm-4">
+        <p class="  text-end">Cloud</p>
       </div>
-      <div class="card">
-        <img class="card-img-top" src="https://warehouse-camo.ingress.cmh1.psfhosted.org/ff98d54caaa928ba7d5bd08e68b12aad2e134736/68747470733a2f2f73656c656e69756d2e6465762f696d616765732f73656c656e69756d5f6c6f676f5f7371756172655f677265656e2e706e67" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">GOOGLE TRANSLATOR SELENIUM</h5>
-          <ul>
-            <li>It can translate a dataset from English to Bangla using google translator.</li>
-          </ul>
-          <br>
-          <span class="badge badge-info float-left"> Java</span>
-          <span class="badge badge-info float-left"> Java-swing </span>
-          <span class="badge badge-info float-left"> Selenium </span>
-        </div>
-        <div class="card-footer">
-          <span class="badge badge-dark float-left">Standalone Application</span>
-
-          <a href="https://github.com/onucsecu2/GoogleTranslatorSeleniumJava"><i class="fab fa-github-alt fa-2x float-right"></i></a>
-        <!--   <a href="https://github.com/peacekeeper117/cpc/"><i style="margin: 10px;" class="fas fa-external-link-alt float-right"></i></a> -->
-        </div>
+      <div class="col-12 col-sm-8">
+        <p>AWS, Firebase</p>
       </div>
-      <div class="card">
-        <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSoW7QOTFarPev2vy-9oa3mBMOSOAthUk_7_3DQpcAcaPixT0vO&usqp=CAU" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">TaskScheduler</h5>
-          <ul>
-            <li>User can save the schedule of the daily tasks.</li>
-            <li> System notify the user prior to starting of the task.</li>
-          </ul>
-          <br>
-          <span class="badge badge-info float-left"> Java </span>
-          <span class="badge badge-info float-left"> XML</span>
-          <span class="badge badge-info float-left"> SQLite </span>
-        </div>
-        <div class="card-footer">
-          <span class="badge badge-dark float-left">Android</span>
-          <a href="https://github.com/onucsecu2/TaskSceduler"><i class="fab fa-github-alt fa-2x float-right"></i></a>
-        </div>
-      </div>
-
     </div>
-    <br>
-  </div>
-</div>
-</div>
+    <div class="row mt-4 mx-3">
+      <div class="col-12 col-sm-4">
+        <p class="  text-end">Desktop</p>
+      </div>
+      <div class="col-12 col-sm-8">
+        <p>Electron (electron-builder)</p>
+      </div>
+    </div>
+    <div class="row mt-4 mx-3">
+      <div class="col-12 col-sm-4">
+        <p class="  text-end">Mobile</p>
+      </div>
+      <div class="col-12 col-sm-8">
+        <p>Android Application Development (Java, Android Studio)</p>
+      </div>
+    </div>
+    <div class="row mt-4 mx-3">
+      <div class="col-12 col-sm-4">
+        <p class="text-end">CMS</p>
+      </div>
+      <div class="col-12 col-sm-8">
+        <p>Adobe Experience Manager</p>
+      </div>
+    </div>
+    <div class="row mt-4 mx-3">
+      <div class="col-12 col-sm-4">
+        <p class="text-end">Database</p>
+      </div>
+      <div class="col-12 col-sm-8">
+        <p><span  data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Professional Projects">PostgresSQL</span>, <span  data-bs-toggle="tooltip" data-bs-custom-class="p-1" data-bs-placement="top" data-bs-title="Experimented in Personal Projects">MySQL, MongoDB</span></p>
+      </div>
+    </div>
+    <div class="row mt-4 mx-3">
+      <div class="col-12 col-sm-4">
+        <p class="text-end">Other</p>
+      </div>
+      <div class="col-12 col-sm-8">
+        <p>Git(version control and collaboration), Docker, Testing(Selenium, WebdriverIO), OpenCV, Traefik, Celery, Keras & TensorFlow</p>
+      </div>
+    </div>
+  </section>
+  <section id="career" class="reveal">
+    <p class="lead text-center">
+      With over 3 years of professional software development experience, I am a passionate and disciplined engineer who
+      continuously learning and finding joy in implementation.
+    </p>
+    <div class="row mt-4 mx-3">
+      <div class="col-12 col-sm-4">
+        <p class="lead text-end">2022 April - Present</p>
+      </div>
+      <div class="col-12 col-sm-8">
+          <a href="https://www.b-architects.com/" target="_blank">
+            <h5 class="h5 reference_text">System Engineer - full time, BA
+              <i class="ps-1 fas fa-external-link-square-alt"></i>
+            </h5>
+          </a>
+          <p class="lead">
+            I have been playing full stack role in client and product based web applications and desktop application development.
+            As a founding member of Miyazaki offshore development team, I contributed to its strategic growth by performing multiple roles.
+          </p>
+          <p>Technology: Typescript(Angular, React), Java(Spring Boot), Python(Lambda, Automation Script, Selenium),
+            Database(postgresql), AWS, CMS(AEM), HTML, CSS, SCSS, Docker.
+          </p>
+      </div>
+    </div>
+    <div class="row mx-3">
+      <div class="col-12 col-sm-4">
+        <p class="lead text-end">2020 October - 2022 March</p>
+      </div>
+      <div class="col-12 col-sm-8">
+        <a href="https://www.b-architects.com/" target="_blank">
+          <h5 class="h5 reference_text">System Engineer - freelance, BA <i class="ps-1 fas fa-external-link-square-alt"></i></h5>
+        </a>
+        <p class="lead">
+          Frontend-focused full-stack development for web applications, ensured seamless user experiences and robust backend integration.
+        </p>
+        <p>Technological: Typescript(Vue), Python(Django), Database(postgresql), AWS, HTML, CSS, SCSS, Docker.</p>
+      </div>
+    </div>
+    <div class="row mx-3">
+      <div class="col-12 col-sm-4">
+        <p class="lead text-end">2019 December - 2020 January</p>
+      </div>
+      <div class="col-12 col-sm-8">
+        <a href="https://agamilabs.com/" target="_blank">
+          <h5 class="h5 reference_text"> Software Engineer - Intern, AGAMiLabs <i class="ps-1 fas fa-external-link-square-alt"></i></h5>
+        </a>
+        <p class="lead">
+          Enhanced an existing Android application codebase and added new features to improve user experience.
+        </p>
+        <p>
+          Technology: Java(Android Studio)
+        </p>
+      </div>
+    </div>
+  </section>
+  <section id="education" class="reveal">
+    <div class="row">
+      <p class="lead" style="text-align: center">
+        <a class="reference_text" href="#aboutme">I graduated</a> with a Bachelor of Science in Engineering, majoring in
+        <span style="font-weight: 400;">Computer Science and Engineering.</span>
+      </p>
+      <p class="lead" style="text-align: center; font-weight: 200;">
+        University of Chittagong
+      </p>
+      <p class="lead" style="text-align: center; font-weight: 200;">
+        Graduation Year: 2020 February
+      </p>
+    </div>
+  </section>
+  <section id="more" class="reveal">
+      <p class="lead" style="text-align: center; font-weight: 200;">
+        Inspired by the Japanese concept of 'Ikigai [生き甲斐]', I find purpose in work, which drives my journey from the Hello World to the cutting-edge technologies.
+        
+      </p>
 
+  </section>
+  <footer id="footer" class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
+        <div class="col mb-3">
+          <p class="text-muted">© Muhammod Ibrahim Khalil 2024</p>
+          <h5>Say Hello!</h5>
+          <a href="https://wwwlinkedin.com/in/mi-khalil-onu" target="_blank" class="nav-link p-0 text-muted"><i class="fab fa-linkedin"></i> linkedin.com/in/mi-khalil-onu<i class="ps-1 fas fa-external-link-square-alt"></i></a>
+          <a href="mailto:onucsecu@gmail.com" class="nav-link p-0 text-muted"><i class="far fa-envelope"></i> onucsecu@gmail.com </i></a>
+        </div>
+        <div class="col mb-3"></div>
+        <div class="col mb-3">
+          <h5>Sections</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Who I am</a></li>
+            <li class="nav-item mb-2"><a href="#career" class="nav-link p-0 text-muted">Where I worked</a></li>
+            <li class="nav-item mb-2"><a href="#skills" class="nav-link p-0 text-muted">What I do</a></li>
+            <li class="nav-item mb-2"><a href="#more" class="nav-link p-0 text-muted">More?</a></li>
+          </ul>
+        </div>
 
+        <div class="col mb-3">
+          <h5>Links</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="https://github.com/onucsecu2/" target="_blank" class="nav-link p-0 text-muted"><i class="fab fa-github"></i> Github</a></li>
+            <li class="nav-item mb-2"><a href="https://www.kaggle.com/onucsecu" target="_blank" class="nav-link p-0 text-muted"><i class="fab fa-kaggle"></i> Kaggle</a></li>
+          </ul>
+        </div>
+
+        <div class="col mb-3">
+          <h5>Interested</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">My CV</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">My Résumé</a></li>
+          </ul>
+        </div>
+      </footer>
+</main>
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+<script  type="text/javascript">
+  var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+  var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+    return new bootstrap.Tooltip(tooltipTriggerEl)
+  })
+</script>
+<script type="text/javascript">
+  const element = document.querySelector('#fixedbutton');
+  document.onreadystatechange = () => {
+    if (document.readyState === "complete") {
+      element.style.display = 'none';
+    }
+  };
+  document.addEventListener('scroll', function() {
+    if (window.scrollY > window.innerHeight-50) {
+      element.style.display = 'block';
+    } else {
+      element.style.display = 'none';
+    }
+  });
+</script>
 </body>
 </html>
