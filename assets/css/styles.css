@@ -6,7 +6,6 @@ a {
 .dp {
     object-fit: contain;
     width: 100%;
-    height: 100%;
     border-radius: 5px;
 }
 h1 {
@@ -81,4 +80,42 @@ section {
     position: fixed;
     bottom: 45%;
     right: 3%;
+}
+.selected {
+    color: black;
+    font-weight: 800;
+}
+/*CSS FOR JAPANESE VERSION*/
+.jp-article--shinbun {
+    writing-mode: vertical-rl;
+    height: 300px;
+}
+
+.jp-article--shinbun > p.lead {
+    font-size: 1.5rem;
+}
+
+.jp-article--shinbun > p.intro-text {
+    font-weight: 400;
+}
+.jp-article--shinbun > .greeting-text {
+    font-size: 1.25rem;
+}
+
+.jp-mode.reference_text {
+    border-bottom: none !important;
+    color: rgba(54, 107, 54, 0.83) !important;
+}
+
+
+@media (max-width: 576px) {
+    .jp-article--shinbun {
+        writing-mode: lr;
+    }
+    .contact-media {
+        margin-top: 120px;
+    }
+    .text-end {
+        text-align: left !important;
+    }
 }
