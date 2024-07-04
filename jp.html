@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="us-en">
+<html lang="jp">
 <head>
   <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
   <meta charset="utf-8">
@@ -17,7 +17,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.1.0/js-yaml.js"></script>
   <!-- Custom css  -->
   <link href="assets/css/styles.css" rel="stylesheet">
-  <title>Khalil | Portfolio</title>
+  <title>カリル | ポートフォリオ</title>
 </head>
 <body data-spy="scroll">
 <h1 class="h1 visually-hidden">MUHAMMOD IBRAHIM KHALIL aka onucsecu</h1>
@@ -26,67 +26,66 @@
   <header>
     <div class="text-muted text-end pt-2">
       <i class="fas fa-globe"></i>
-      <span class="selected">EN</span>
+      <span><a href="./index.html">EN</a></span>
       <span> | </span>
-      <span><a href="./jp.html">JP</a></span>
+      <span class="selected">JP</span>
     </div>
   </header>
   <section class="container" id="aboutme">
     <div class="row">
       <div class="col-12 col-sm-4">
-        <img class="dp h-100" alt="Photo of Khalil aka onucsecu" src="assets/img/dp.jpg">
+        <img class="dp" alt="Photo of Khalil aka onucsecu" src="assets/img/dp.jpg">
       </div>
       <div class="col-12 col-sm-8">
         <!--about me-->
-          <p class="greeting-text">Nice to meet you</p>
-          <p class="intro-text">Hi There, I'm Khalil.</p>
+        <div class="jp-article--shinbun">
+          <p class="greeting-text m-0">はじめまして</p>
+          <p class="intro-text m-0">カリルです</p>
           <p class="lead">
-            I am a <a class="reference_text" href="#education">Software Engineer</a> based in
-            <span class="reference_text"
-               data-bs-toggle="tooltip" data-bs-html="true"
-               title="<img src='assets/img/location.jpg' alt='Location of Miyazaki' class='location-detailed-image'/>">
-              Miyazaki, Japan.
-            </span>
-            I have <a class="reference_text" href="#work_history">professional experience</a> in taking <a class="reference_text" href="#tools_I_use">fullstack applications</a>
-            from scratch to production. I can manage the entire process, from coding to deploying on the server,
-            to bring ideas to life. I like to <a class="reference_text" href="#more">introduce myself</a> as your right-hand partner in the team, ensuring that our vision becomes a reality.</p>
+            私は <span class="jp-mode reference_text"
+                      data-bs-toggle="tooltip" data-bs-html="true"
+                      title="<img src='assets/img/location.jpg' alt='Location of Miyazaki' class='location-detailed-image'/>">宮崎県</span>
+            在住<a class="jp-mode reference_text" href="#education">ソフトウェアエンジニア</a>です。システム開発の<a class="jp-mode reference_text" href="#work_history">プロフェッショナル</a>として、<a class="jp-mode reference_text" href="#tools_I_use">ゼロからの開発経験</a>を有しております。
+            アイデアを実現するため、コーディングからサーバーへのデプロイまで、全てのプロセスを管理することが可能です。<a class="jp-mode reference_text" href="#more">ビジョンを現実にするために、チームの右腕となりましょう。</a>
+          </p>
+        </div>
         <div class="contact-media">
-          <p class="lead"><a class="reference_text" href="#footer">Get in touch</a> &#8594; <i class="far fa-envelope"></i> onucsecu@gmail.com </p>
+          <p class="lead"><a class="reference_text" href="#footer">お問い合わせ</a> &#8594; <i class="far fa-envelope"></i> onucsecu@gmail.com </p>
         </div>
       </div>
     </div>
   </section>
   <section id="tools_I_use" class="reveal">
-    <p class="lead text-center">Versatile in various technologies and languages,  I can easily transfer my skills to new challenges.
-      I’ve used these technologies in both professional projects and spare-time, idea-driven endeavors.
-      I have developed Web, Desktop and Mobile application using these tech.</p>
+    <p class="lead text-center">様々な技術や言語に精通しているため、自分のスキルを新しい課題に簡単に転用することができます。
+      プロフェッショナルなプロジェクトでも、余暇を利用したアイデア主導の取り組みでも、これらの技術を使っています。
+      こちらの技術を使って、ウェブやデスクトップやモバイルアプリケーションも開発します。</p>
     <div class="row mt-4 mx-3">
       <div class="col-12 col-sm-4">
-        <p class="  text-end">Language</p>
+        <p class="text-end">言語</p>
       </div>
       <div class="col-12 col-sm-8">
-        <p>Typescript, Javascript, Python, Java, <span  data-bs-toggle="tooltip" data-bs-custom-class="p-1" data-bs-placement="top" data-bs-title="Used with Laravel framework">PHP</span>, <span  data-bs-toggle="tooltip" data-bs-custom-class="p-1" data-bs-placement="top" data-bs-title="Competitive Programming Only">C/C++</span></p>
+        <p>Typescript, Javascript, Python, Java, <span  data-bs-toggle="tooltip" data-bs-custom-class="p-1" data-bs-placement="top" data-bs-title="Laravelで使った">PHP</span>, <span  data-bs-toggle="tooltip" data-bs-custom-class="p-1" data-bs-placement="top" data-bs-title="競技プログラミングのみ">C/C++</span></p>
       </div>
     </div>
     <div class="row mt-4 mx-3">
       <div class="col-12 col-sm-4">
-        <p class="  text-end">Frontend</p>
+        <p class="text-end">フロントエンド</p>
       </div>
       <div class="col-12 col-sm-8">
-        <p>Angular(RxJs, ngRx, signal), Vue<span  data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="it was used in the project then, but now Pinia is introduced and I updated my knowledge">(<del>Vuex</del> Pinia)</span>, React(Redux, MobX), HTML, CSS, SCSS.</p>
+        <p>Angular(RxJs, ngRx, signal), Vue<span  data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Vuexを使っていたが、Piniaを導入して知識を更新した">(<del>Vuex</del> Pinia)</span>, React(Redux, MobX), HTML, CSS, SCSS.</p>
       </div>
     </div>
     <div class="row mt-4 mx-3">
       <div class="col-12 col-sm-4">
-        <p class="  text-end">Backend</p>
+        <p class="  text-end">バックエンド</p>
       </div>
       <div class="col-12 col-sm-8">
-        <p>Django, Springboot, <span  data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Contributing in a Personal project in my leisure">FastAPI</span>, <span  data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="I am not sync with since v5.6">Laravel</span></p>
+        <p>Django, Springboot, <span  data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="余暇を利用した個人プロジェクトへ作った">FastAPI</span>, <span  data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="v5.6以降と同期してない">Laravel</span></p>
       </div>
     </div>
     <div class="row mt-4 mx-3">
       <div class="col-12 col-sm-4">
-        <p class="  text-end">Cloud</p>
+        <p class="  text-end">クラウド</p>
       </div>
       <div class="col-12 col-sm-8">
         <p>AWS, Firebase</p>
@@ -94,13 +93,13 @@
     </div>
     <div class="row mt-4 mx-3">
       <div class="col-12 col-sm-4">
-        <p class="  text-end">Desktop</p>
+        <p class="  text-end">デスクトップ</p>
       </div>
       <div class="col-12 col-sm-8">
         <p>Electron (electron-builder)</p>
       </div>
     </div>
-    <div class="row mt-4 mx-3" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="I have very old knowledge">
+    <div class="row mt-4 mx-3" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="知識が古い">
       <div class="col-12 col-sm-4">
         <p class="  text-end">Mobile</p>
       </div>
@@ -108,7 +107,7 @@
         <p>Android Application Development (Java, Android Studio)</p>
       </div>
     </div>
-    <div class="row mt-4 mx-3" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="I have the least interest">
+    <div class="row mt-4 mx-3" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="やったけど欲しくない">
       <div class="col-12 col-sm-4">
         <p class="text-end">CMS</p>
       </div>
@@ -118,72 +117,70 @@
     </div>
     <div class="row mt-4 mx-3">
       <div class="col-12 col-sm-4">
-        <p class="text-end">Database</p>
+        <p class="text-end">データベース</p>
       </div>
       <div class="col-12 col-sm-8">
-        <p>PostgresSQL, <span  data-bs-toggle="tooltip" data-bs-custom-class="p-1" data-bs-placement="top" data-bs-title="Experimented in Personal Projects">MySQL, MongoDB</span></p>
+        <p>PostgresSQL, <span  data-bs-toggle="tooltip" data-bs-custom-class="p-1" data-bs-placement="top" data-bs-title="個人プロジェクトで実験">MySQL, MongoDB</span></p>
       </div>
     </div>
     <div class="row mt-4 mx-3">
       <div class="col-12 col-sm-4">
-        <p class="text-end">Other</p>
+        <p class="text-end">その他</p>
       </div>
       <div class="col-12 col-sm-8">
-        <p>Git(version control and collaboration), Docker, Testing(Selenium, WebdriverIO), OpenCV, <span  data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Personally tried">Traefik, Celery,</span> <span  data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Personal Projects with Personal Interests">Keras & TensorFlow</span></p>
+        <p>Git(バージョン管理やコラボ), Docker, テスチング(Selenium, WebdriverIO), OpenCV, <span  data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="個人的に試してみた">Traefik, Celery,</span> <span  data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="個人的に試してみた">Keras & TensorFlow</span></p>
       </div>
     </div>
   </section>
   <section id="work_history" class="reveal">
     <p class="lead text-center">
-      With over 3 years of professional software development experience, I am a passionate and disciplined engineer who
-      continuously learning and finding joy in implementation.
+      3年以上のプロフェッショナルなソフトウェア開発経験を持ち、情熱を持って取り組むとともに、常に学び続け、実装に喜びを見いだす規律あるエンジニアです。
     </p>
     <div class="row mt-4 mx-3">
       <div class="col-12 col-sm-4">
-        <p class="lead text-end">2022 April - Present</p>
+        <p class="lead text-end">2022年4月 - 現在</p>
       </div>
       <div class="col-12 col-sm-8">
           <a href="https://www.b-architects.com/" target="_blank">
-            <h5 class="h5 reference_text">System Engineer - full time, BA
+            <h5 class="h5 reference_text">システム　エンジニア - 正社員, BA
               <i class="ps-1 fas fa-external-link-square-alt"></i>
             </h5>
           </a>
           <p class="lead">
-            I have been playing full stack role in client and product based web applications and desktop application development.
-            As a founding member of Miyazaki offshore development team, I contributed to its strategic growth by performing multiple roles.
+            クライアントおよびプロダクトベースのウェブアプリケーションやデスクトップアプリケーション開発において、フルスタックの役割を果たしてきました。宮崎オフショア開発チームの創設メンバーとして、複数の役割を担い、その戦略的成長に貢献しました。
           </p>
-          <p>Technology: Typescript(Angular, React), Java(Spring Boot), Python(Lambda, Automation Script, Selenium),
+          <p>技術: Typescript(Angular, React), Java(Spring Boot), Python(Lambda, Automation Script, Selenium),
             Database(postgresql), AWS, CMS(AEM), HTML, CSS, SCSS, Docker.
           </p>
       </div>
     </div>
     <div class="row mx-3">
       <div class="col-12 col-sm-4">
-        <p class="lead text-end">2020 October - 2022 March</p>
+        <p class="lead text-end">2020年10月 - 2022年3月</p>
       </div>
       <div class="col-12 col-sm-8">
         <a href="https://www.b-architects.com/" target="_blank">
-          <h5 class="h5 reference_text">System Engineer - freelance, BA <i class="ps-1 fas fa-external-link-square-alt"></i></h5>
+          <h5 class="h5 reference_text">システム　エンジニア - フリーランス, BA <i class="ps-1 fas fa-external-link-square-alt"></i></h5>
         </a>
         <p class="lead">
-          Frontend-focused full-stack development for web applications, ensured seamless user experiences and robust backend integration.
+          フロントエンドに重点を置いたフルスタックのウェブアプリケーション開発に従事し、シームレスなユーザー体験と堅牢なバックエンド統合を実現する。
         </p>
-        <p>Technological: Typescript(Vue), Python(Django), Database(postgresql), AWS, HTML, CSS, SCSS, Docker.</p>
+        <p>技術: Typescript(Vue), Python(Django), Database(postgresql), AWS, HTML, CSS, SCSS, Docker.</p>
       </div>
     </div>
     <div class="row mx-3">
       <div class="col-12 col-sm-4">
-        <p class="lead text-end">2019 December - 2020 January</p>
+        <p class="lead text-end">2019年12月 - 2020年1月</p>
       </div>
       <div class="col-12 col-sm-8">
         <a href="https://agamilabs.com/" target="_blank">
-          <h5 class="h5 reference_text"> Software Engineer - Intern, AGAMiLabs <i class="ps-1 fas fa-external-link-square-alt"></i></h5>
+          <h5 class="h5 reference_text">ソフトウェアエンジニア - インターン, AGAMiLabs <i class="ps-1 fas fa-external-link-square-alt"></i></h5>
         </a>
         <p class="lead">
-          Developing Enhanced features to improve user experience.
+          ユーザーエクスペリエンスを向上させるための拡張機能の開発。
         </p>
         <p>
-          Technology: Java(Android Studio)
+          技術: Java(Android Studio)
         </p>
       </div>
     </div>
@@ -191,52 +188,49 @@
   <section id="education" class="reveal">
     <div class="row">
       <p class="lead" style="text-align: center">
-        <a class="reference_text" href="#aboutme">I graduated</a> with a Bachelor of Science in Engineering, majoring in
-        <span style="font-weight: 400;">Computer Science and Engineering.</span>
+        工学の学士号を取得し、専攻は<span style="font-weight: 400;">コンピュータサイエンスとエンジニアリング</span>です。
       </p>
       <p class="lead" style="text-align: center; font-weight: 200;">
         University of Chittagong
       </p>
       <p class="lead" style="text-align: center; font-weight: 200;">
-        Graduation Year: 2020 February
+        卒業年: 2020年2月
       </p>
     </div>
   </section>
   <section id="more" class="reveal">
       <p class="lead" style="text-align: center; font-weight: 200;">
-        Inspired by the Japanese concept of 'Ikigai [生き甲斐]', I find purpose in work, which drives my journey from the Hello World to the cutting-edge technologies.
+        日本の「生き甲斐」［Ikigai］の概念に触発され、仕事に目的を見いだし、「Hello World」から最先端技術への旅を進めています。
       </p>
   </section>
   <footer id="footer" class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 px-5 my-5 border-top">
         <div class="col mb-3">
-          <p class="text-muted">© Muhammod Ibrahim Khalil 2024</p>
-          <h5>Say Hello!</h5>
+          <p class="text-muted">© ムハンマド　イブラヒム　カリル　2024</p>
+          <h5>挨拶する！</h5>
           <a href="https://wwwlinkedin.com/in/mi-khalil-onu" target="_blank" class="nav-link p-0 text-muted"><i class="fab fa-linkedin"></i> linkedin.com/in/mi-khalil-onu<i class="ps-1 fas fa-external-link-square-alt"></i></a>
           <a href="mailto:onucsecu@gmail.com" class="nav-link p-0 text-muted"><i class="far fa-envelope"></i> onucsecu@gmail.com</a>
         </div>
         <div class="col mb-3"></div>
         <div class="col mb-3">
-          <h5>Sections</h5>
+          <h5>部分</h5>
           <ul class="nav flex-column">
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Who I am</a></li>
-            <li class="nav-item mb-2"><a href="#work_history" class="nav-link p-0 text-muted">Where I worked</a></li>
-            <li class="nav-item mb-2"><a href="#tools_I_use" class="nav-link p-0 text-muted">What I do</a></li>
-            <li class="nav-item mb-2"><a href="#more" class="nav-link p-0 text-muted">More?</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">自分についてこと</a></li>
+            <li class="nav-item mb-2"><a href="#work_history" class="nav-link p-0 text-muted">履歴こと</a></li>
+            <li class="nav-item mb-2"><a href="#tools_I_use" class="nav-link p-0 text-muted">何をやること・できること</a></li>
+            <li class="nav-item mb-2"><a href="#more" class="nav-link p-0 text-muted">感動こと</a></li>
           </ul>
         </div>
-
         <div class="col mb-3">
-          <h5>Links</h5>
+          <h5>リンク</h5>
           <ul class="nav flex-column">
             <li class="nav-item mb-2"><a href="https://github.com/onucsecu2/" target="_blank" class="nav-link p-0 text-muted"><i class="fab fa-github"></i> Github</a></li>
             <li class="nav-item mb-2"><a href="https://www.kaggle.com/onucsecu" target="_blank" class="nav-link p-0 text-muted"><i class="fab fa-kaggle"></i> Kaggle</a></li>
           </ul>
         </div>
-
         <div class="col mb-3">
-          <h5>Interested?</h5>
+          <h5>会いたいこと?</h5>
           <ul class="nav flex-column">
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">My Résumé</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">履歴書</a></li>
           </ul>
         </div>
       </footer>
